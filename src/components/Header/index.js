@@ -10,20 +10,19 @@ import tplLogo from '../../Image/Home/TPL_Logo.png'
 
 const Header = () => {
   const navbarList = ['Home', 'AboutUs', 'Outsourcing', 'Solutions', 'WorkFromHome', 'News', 'Careers', 'Contact'];
-
   return (
     <BrowserRouter>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-light">
         <div className="container-fluid">
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className='col-lg-2'>
+          <div className='col-lg-3'>
           <NavLink to='/'><img src={fvlLogo} alt="Logo FVL" className={header.logoFVL} /></NavLink>
           <NavLink to='/'><img src={tplLogo} alt="Logo FVL" className={header.logoTPL} /></NavLink>
           </div>
           <div className="collapse navbar-collapse" id="navbarToggler">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav ms-auto mt-2 mt-lg-0">
               {navbarList.map((navbarItem, index) => {
                 return (
                   <li className='nav-item' key={index}>
