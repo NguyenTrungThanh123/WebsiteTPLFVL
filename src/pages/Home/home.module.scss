@@ -1,3 +1,4 @@
+$bgcolor: linear-gradient(264deg, #6549d50d -22%, #ffffff 73%, #fb534308 78%);
 .banner{
     background-image: url('../../Image/Home/Banner/wrapper_header_bg.jpg');
     
@@ -6,4 +7,5 @@
 .content{
     
     color: red;
+    background: $bgcolor;
 }

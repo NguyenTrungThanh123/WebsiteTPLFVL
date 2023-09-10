@@ -1,8 +1,5 @@
 /* style.module.css */
-.logo{
-    display: flex;
-    justify-content: space-between;
-}
+$colortextnav: #f26522;
 .logoFVL{
     height: 36px;
     width: 140px;
@@ -13,11 +10,15 @@
     width: 87.9px;
     margin: auto
 }
-.navbar-link{
-    a{
-        font-weight: bold;
-    }
+.navlist{
     a:hover{
-    color: orange !important;
-}
-}
+        color: $colortextnav;
+    }
+    a.active{
+        color: $colortextnav !important;
+    }
+    a{
+        font-size: 1.1rem;
+        margin-right: 15px;
+    }
+} 

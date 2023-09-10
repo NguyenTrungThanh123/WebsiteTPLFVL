@@ -9,7 +9,7 @@ import fvlLogo from '../../Image/Home/FVL_Logo.png'
 import tplLogo from '../../Image/Home/TPL_Logo.png'
 
 const Header = () => {
-  const navbarList = ['Home', 'AboutUs', 'Outsourcing', 'Solutions', 'WorkFromHome', 'News', 'Careers', 'Contact'];
+  const navbarList = ['HOME', 'ABOUTUS', 'OUTSOURCING', 'SOLUTION', 'WORKFROMHOME', 'NEWS', 'CAREERS', 'CONTACT'];
   return (
     <BrowserRouter>
       <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-light">
@@ -17,21 +17,24 @@ const Header = () => {
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className='col-lg-3'>
-          <NavLink to='/'><img src={fvlLogo} alt="Logo FVL" className={header.logoFVL} /></NavLink>
-          <NavLink to='/'><img src={tplLogo} alt="Logo FVL" className={header.logoTPL} /></NavLink>
+          <div className="col-lg-3">
+            <NavLink to='/'><img src={fvlLogo} alt="Logo FVL" className={header.logoFVL} /></NavLink>
+            <NavLink to='/'><img src={tplLogo} alt="Logo FVL" className={header.logoTPL} /></NavLink>
           </div>
           <div className="collapse navbar-collapse" id="navbarToggler">
             <ul className="navbar-nav ms-auto mt-2 mt-lg-0">
-              {navbarList.map((navbarItem, index) => {
-                return (
-                  <li className='nav-item' key={index}>
-                    <NavLink to={navbarItem} className='nav-link'> {/* Thêm lớp CSS noUnderline */}
-                      {navbarItem}
-                    </NavLink>
-                  </li>
-                );
-              })}
+              
+                {navbarList.map((navbarItem, index) => {
+                  return (
+                    <li className="nav-item" key={index}>
+                      <div className={header.navlist}>
+                      <NavLink to={navbarItem} className="nav-link"> {/* Thêm lớp CSS noUnderline */}
+                        {navbarItem}
+                      </NavLink>
+                      </div>
+                    </li>
+                  );
+                })}
             </ul>
           </div>
         </div>
