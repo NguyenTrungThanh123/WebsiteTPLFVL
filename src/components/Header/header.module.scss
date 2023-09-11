@@ -14,11 +14,13 @@ $colortextnav: #f26522;
     a:hover{
         color: $colortextnav;
     }
-    a.active{
+    a:active{
         color: $colortextnav !important;
     }
     a{
         font-size: 1.1rem;
         margin-right: 15px;
+        font-weight: 700;
+        color: #858282;
     }
 } 
