@@ -22,21 +22,23 @@ const Footer = () => {
                         <div className='col-lg-3'>
                             <div className={footer.namesubject}>Our Careers</div>
                             <div className={footer.infodetail}>You can click button to apply your information for our jobs</div>
-                            <div className={footer.btnapply}><Link to='/careers' className={footer.linkApplyJob} >Apply Now</Link></div>
+                                <button className={footer.btnapply} type="button">
+                                    <Link to='/careers' className={footer.linkApplyJob} >Apply Now</Link>
+                                </button>
                         </div>
                         <div className='col-lg-3'>
                             <div className={footer.namesubject}>Social Network Link</div>
-                            <div className={footer.linkFbFVL}>
+                            <div className={footer.linkcompany}>
                                 <a href="https://www.facebook.com/1stvirtue.company/" target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faFacebook} className={footer.fbFVLicon} />First Virtue Limited
+                                    <FontAwesomeIcon icon={faFacebook} className={footer.inforIcon} />First Virtue Limited
                                 </a>
                             </div>
-                            <div className={footer.linkFbTPL}>
+                            <div className={footer.linkcompany}>
                                 <a href="https://www.facebook.com/FVLTPL" target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faFacebook} className={footer.fbTPLicon} />Transcend People Limited
+                                    <FontAwesomeIcon icon={faFacebook} className={footer.inforIcon} />Transcend People Limited
                                 </a>
                             </div>
-                            <div className={footer.turkeyDashLink}><a href="https://www.facebook.com/turkeydashvietnam" target="_blank" rel="noopener noreferrer"><img src={turkeydash} alt="turkeydash" /> Turkey Dash VietNam</a></div>
+                            <div className={footer.turkeyDashLink}><a href="https://www.facebook.com/turkeydashvietnam" target="_blank" rel="noopener noreferrer"><img src={turkeydash} alt="turkeydash" />Turkey Dash VietNam</a></div>
                         </div>
                         <div className='col-lg-2'>
                             <div className={footer.isoLogo}>
