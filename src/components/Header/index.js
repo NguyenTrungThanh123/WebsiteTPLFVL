@@ -16,7 +16,6 @@ const Header = () => {
            <NavLink to='/'><img src={fvlLogo} alt="Logo FVL" className={header.logoFVL} /></NavLink>
            <NavLink to='/'><img src={tplLogo} alt="Logo FVL" className={header.logoTPL}/></NavLink>
         </div>
-        
         <ul className={header.navbar}>
             {navbarList.map((navbarItem, index) => {
               return (
