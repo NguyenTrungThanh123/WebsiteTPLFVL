@@ -33,7 +33,7 @@ const Footer = () => {
                             </div>
                             <div className={footer.linkFbTPL}>
                                 <a href="https://www.facebook.com/FVLTPL" target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faFacebook} className={footer.fbTPLicon} />Transcend People Limited
+                                    <FontAwesomeIcon icon={faFacebookF} className={footer.fbTPLicon} />Transcend People Limited
                                 </a>
                             </div>
                             <div className={footer.turkeyDashLink}><a href="https://www.facebook.com/turkeydashvietnam" target="_blank" rel="noopener noreferrer"><img src={turkeydash} alt="turkeydash" /> Turkey Dash VietNam</a></div>
