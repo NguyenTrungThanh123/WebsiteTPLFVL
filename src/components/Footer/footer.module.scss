@@ -1,51 +1,150 @@
-$colortextnav: #f26522;
-.turkeyDashLink{
-    img{
+$colorhover: linear-gradient(66.75deg, #00a5cf 0.87%, #d12bec 100%);
+
+.turkeyDashLink {
+    margin-top: 10px;
+
+    img {
         height: 16px;
         width: 16px;
+        margin-right: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: lightgray;
+        letter-spacing: .5px;
+    }
+
+    a:hover {
+        background: $colorhover;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
     }
 }
-.isoLogo{
-    img{
+
+.linkcompany {
+    margin-top: 10px;
+
+    a {
+        text-decoration: none;
+        color: lightgray;
+        letter-spacing: .5px;
+    }
+
+    a:hover {
+        background: $colorhover;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+}
+
+.isoLogo {
+    img {
         width: 100px;
         height: auto;
         display: block;
         margin: auto;
-        padding-top: 20px;
+        padding-top: 40px;
     }
 }
-.copyRight{
+
+.copyRight {
     text-align: center;
+    color: lightgray;
+    margin-top: 30px;
+    letter-spacing: .5px;
+
+    a {
+        text-decoration: none;
+        color: lightgray;
+        letter-spacing: .5px;
+    }
+
+    a:hover {
+        background: $colorhover;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
 }
-.inforIcon{
+
+.inforIcon {
     padding-right: 10px;
 }
-.infodetail{
-    color: white;
+
+.infodetail {
+    color: lightgray;
     margin-top: 10px;
+    letter-spacing: .5px;
 }
-.namesubject{
+
+.namesubject {
     font-size: 1.3rem;
     padding: 10px 0;
     border-bottom: 3px solid #dfdfdf;
-    color: $colortextnav;
+    color: #ffffff;
     line-height: 2rem;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: .5px;
 }
-.inforfooter{
-    background-color: rgb(79, 79, 79);
+
+.inforfooter {
+    background-color: #1e0d2b;
 }
-.btnapply{
-    background-color: #f26522;
-    padding: 10px 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-.btnapply a {
-    color: #fff;
-    font-size: 1.3rem;
-    text-align: center;
-    display: block;
-    font-weight: 500;
-    text-decoration: none;
+
+.btnapply {
+    background-color: #1e0d2b;
+    border: none;
+
+    a {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        border-radius: 40px;
+        border: 1.5px solid #d12bec;
+        color: lightgray;
+        z-index: 1;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        margin-top: 10px;
+        padding: 13px 35px !important;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    a:hover::before {
+        width: 100%;
+        background: $colorhover;
+    }
+
+    a::before {
+        border-radius: 50px 50px 0 0;
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 50%;
+        transition: all 0.3s ease-in;
+        background: $colorhover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+
+    a:hover::after {
+        width: 100%;
+        background: $colorhover;
+    }
+
+    a::after {
+        border-radius: 0 0 50px 50px;
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 50%;
+        transition: all 0.3s ease-in;
+        background: $colorhover;
+        z-index: -1;
+        bottom: 0;
+        right: 0;
+    }
 }

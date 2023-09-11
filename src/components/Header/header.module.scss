@@ -1,5 +1,5 @@
 /* style.module.css */
-$colortextnav: #f26522;
+$colortextnav: linear-gradient(66.75deg, #00a5cf 0.87%, #d12bec 100%);
 .logoFVL{
     height: 36px;
     width: 140px;
@@ -12,7 +12,9 @@ $colortextnav: #f26522;
 }
 .navlist{
     a:hover{
-        color: $colortextnav;
+        background: $colortextnav;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
     }
     a:active{
         color: $colortextnav !important;
