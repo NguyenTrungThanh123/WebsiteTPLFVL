@@ -1,4 +1,4 @@
-$colorhover: linear-gradient(66.75deg, #00a5cf 0.87%, #d12bec 100%);
+@import '../../index.scss';
 
 .turkeyDashLink {
     margin-top: 10px;
@@ -16,9 +16,9 @@ $colorhover: linear-gradient(66.75deg, #00a5cf 0.87%, #d12bec 100%);
     }
 
     a:hover {
-        background: $colorhover;
+        background: $colorPrimary;
         -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
+        background-clip: text;
     }
 }
 
@@ -32,9 +32,9 @@ $colorhover: linear-gradient(66.75deg, #00a5cf 0.87%, #d12bec 100%);
     }
 
     a:hover {
-        background: $colorhover;
+        background: $colorPrimary;
         -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
+        background-clip: text;
     }
 }
 
@@ -61,9 +61,9 @@ $colorhover: linear-gradient(66.75deg, #00a5cf 0.87%, #d12bec 100%);
     }
 
     a:hover {
-        background: $colorhover;
+        background: $colorPrimary;
         -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
+        background-clip: text;
     }
 }
 
@@ -114,7 +114,7 @@ $colorhover: linear-gradient(66.75deg, #00a5cf 0.87%, #d12bec 100%);
 
     a:hover::before {
         width: 100%;
-        background: $colorhover;
+        background: $colorPrimary;
     }
 
     a::before {
@@ -124,7 +124,7 @@ $colorhover: linear-gradient(66.75deg, #00a5cf 0.87%, #d12bec 100%);
         width: 0;
         height: 50%;
         transition: all 0.3s ease-in;
-        background: $colorhover;
+        background: $colorPrimary;
         z-index: -1;
         top: 0;
         left: 0;
@@ -132,7 +132,7 @@ $colorhover: linear-gradient(66.75deg, #00a5cf 0.87%, #d12bec 100%);
 
     a:hover::after {
         width: 100%;
-        background: $colorhover;
+        background: $colorPrimary;
     }
 
     a::after {
@@ -142,7 +142,7 @@ $colorhover: linear-gradient(66.75deg, #00a5cf 0.87%, #d12bec 100%);
         width: 0;
         height: 50%;
         transition: all 0.3s ease-in;
-        background: $colorhover;
+        background: $colorPrimary;
         z-index: -1;
         bottom: 0;
         right: 0;
