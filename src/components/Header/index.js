@@ -9,7 +9,24 @@ import fvlLogo from '../../Image/Home/FVL_Logo.png'
 import tplLogo from '../../Image/Home/TPL_Logo.png'
 
 const Header = () => {
-  const navbarList = ['HOME', 'ABOUTUS', 'OUTSOURCING', 'SOLUTIONS', 'WORKFROMHOME', 'NEWS', 'CAREERS', 'CONTACT'];
+  const navbarList = [
+                      {to: 'Home',
+                      name: 'Home',},
+                      {to: 'AboutUs/OurCompanies',
+                      name: 'About Us',},
+                      {to: 'Outsourcing',
+                      name: 'Outsourcing'},
+                      {to: 'Solutions',
+                      name: 'Solutions',},
+                      {to: 'WorkFromHome',
+                      name: 'Work From Home',},
+                      {to: 'News',
+                      name: 'News',},
+                      {to: 'Careers',
+                      name: 'Careers',},
+                      {to: 'Contact',
+                      name: 'Contact',}
+                    ];
   return (
     <BrowserRouter>
       <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-light">
@@ -27,9 +44,9 @@ const Header = () => {
                 {navbarList.map((navbarItem, index) => {
                   return (
                     <li className="nav-item" key={index}>
-                      <div className={header.navlist}>
-                      <NavLink to={navbarItem} className="nav-link"> {/* Thêm lớp CSS noUnderline */}
-                        {navbarItem}
+                      <div className={header.navlist}> 
+                      <NavLink to={navbarItem.to} className="nav-link"> {/* Thêm lớp CSS noUnderline */}
+                        {navbarItem.name}
                       </NavLink>
                       </div>
                     </li>
