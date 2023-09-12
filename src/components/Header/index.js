@@ -9,7 +9,7 @@ import fvlLogo from '../../Image/Home/FVL_Logo.png'
 import tplLogo from '../../Image/Home/TPL_Logo.png'
 
 const Header = () => {
-  const navbarList = ['HOME', 'ABOUTUS', 'OUTSOURCING', 'SOLUTION', 'WORKFROMHOME', 'NEWS', 'CAREERS', 'CONTACT'];
+  const navbarList = ['HOME', 'ABOUTUS', 'OUTSOURCING', 'SOLUTIONS', 'WORKFROMHOME', 'NEWS', 'CAREERS', 'CONTACT'];
   return (
     <BrowserRouter>
       <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-light">
