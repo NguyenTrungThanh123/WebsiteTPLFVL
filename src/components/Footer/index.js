@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faPhoneVolume, faPhone } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import footer from './footer.module.scss'
 import { Link } from 'react-router-dom'
 import turkeydash from '../../Image/Footer/turkeydash.jpg'
