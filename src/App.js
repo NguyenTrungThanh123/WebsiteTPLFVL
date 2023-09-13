@@ -1,12 +1,8 @@
-import { BrowserRouter } from 'react-router-dom';
-import Header from './components/Header';
-import AboutUs from './pages/AboutUs';
+import Main from './components/Navigation/Main';
 function App() {
   
   return (
-         <BrowserRouter>
-            <Header />
-         </BrowserRouter>
+          <Main />
   );
 }
 
