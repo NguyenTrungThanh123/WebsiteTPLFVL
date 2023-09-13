@@ -28,6 +28,7 @@ const  publicRoutes = [
     {path: '/PrivacyPolice', component: PrivacyPolice, },
 ];
 const AboutUsRoutes = [
+    {path: '/', component: OurCompanies, },
     {path: '/OurCompanies', component: OurCompanies, },
     {path: '/OurLeadershipTeam', component: OurLeadership, },
     {path: '/OurAchievements', component:OurAchievements, },
