@@ -75,8 +75,8 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <section className={home.experience}>
-                    <div className="container text-center d-flex flex-column">
+                <div className={home.experience}>
+                    <div className="container-fluid text-center d-flex flex-column">
                         <div className={home.titleContent}>
                             <h2>
                                 The First Virtue & Transcend People Advantage
@@ -88,7 +88,7 @@ const Home = () => {
                         </div>
                         <div className={home.btnapply}><NavLink to='/AboutUs'>About Us</NavLink></div>
                     </div>
-                </section>
+                </div>
                 <div className="container-fluid">
                     <div className={home.titleContent}>
                         <h2>
