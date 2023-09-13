@@ -1,16 +1,9 @@
-import Footer  from "../../Footer";
-import Header from "../../Header";
-const AboutUsLayout = ({children}) => {
+
+const AboutUsLayout = () => {
     return (
         <>
-           
-                <div className="content">
-                    <div>{children}</div>
-                </div>
-            <Footer />
+            
         </>
-
     )
 }
-
 export default AboutUsLayout;

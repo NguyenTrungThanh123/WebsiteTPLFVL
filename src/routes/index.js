@@ -12,13 +12,13 @@ import OurLeadership from "../pages/AboutUs/OurLeadership";
 import OurAchievements from "../pages/AboutUs/OurAchievements";
 import OurActivities from "../pages/AboutUs/OurActivities";
 import OurCustomers from "../pages/AboutUs/OurCustomers";
-import AboutUsLayout from "../components/Layout/AboutUsLayout";
+
 
 
 const  publicRoutes = [
     {path: '/', component: Home},
     {path: '/Home', component: Home},
-    {path: '/AboutUs', component: AboutUs,layout: AboutUsLayout},
+    {path: '/AboutUs', component: AboutUs,},
     {path: '/Outsourcing', component: Outsourcing},
     {path: '/Solutions', component: Solutions},
     {path: '/WorkFromHome', component: WorkFromHome},
@@ -29,13 +29,13 @@ const  publicRoutes = [
    
 ];
 const AboutUsRoutes = [
-    {path: '/AboutUs/*', component: OurCompanies, layout: AboutUsLayout},
-    {path: '/AboutUs/OurCompanies', component: OurCompanies, layout: AboutUsLayout},
-    {path: '/AboutUs/OurCompanies', component: OurCompanies, layout: AboutUsLayout},
-    {path: '/AboutUs/OurLeadershipTeam', component: OurLeadership, layout: AboutUsLayout},
-    {path: '/AboutUs/OurAchievements', component:OurAchievements, layout: AboutUsLayout},
-    {path: 'AboutUs/OurActivities', component: OurActivities, layout: AboutUsLayout},
-    {path: '/AboutUs/OurCustomers', component: OurCustomers,layout: AboutUsLayout}
+    {path: '/AboutUs/*', component: OurCompanies, },
+    {path: '/AboutUs/OurCompanies', component: OurCompanies, },
+    {path: '/AboutUs/OurCompanies', component: OurCompanies, },
+    {path: '/AboutUs/OurLeadershipTeam', component: OurLeadership, },
+    {path: '/AboutUs/OurAchievements', component:OurAchievements, },
+    {path: 'AboutUs/OurActivities', component: OurActivities, },
+    {path: '/AboutUs/OurCustomers', component: OurCustomers,}
 ]
 const  privateRoutes = [];
 

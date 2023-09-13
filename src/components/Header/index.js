@@ -1,14 +1,12 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import { BrowserRouter, Routes, Route, Outlet, NavLink } from 'react-router-dom';
-import { publicRoutes } from '../../routes';
-import DefaultLayout from '../Layout/DefaultLayout';
+import {NavLink } from 'react-router-dom';
 import header from './header.module.scss';
 import fvlLogo from '../../Image/Home/FVL_Logo.png'
 import tplLogo from '../../Image/Home/TPL_Logo.png'
 
-const Header = () => {
+const MainLayout = () => {
   const navbarList = [
                       {to: 'Home',
                       name: 'Home',},
@@ -40,7 +38,6 @@ const Header = () => {
           </div>
           <div className="collapse navbar-collapse" id="navbarToggler">
             <ul className="navbar-nav ms-auto mt-2 mt-lg-0">
-              
                 {navbarList.map((navbarItem, index) => {
                   return (
                     <li className="nav-item" key={index}>
@@ -56,18 +53,9 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      <Routes>
-        {publicRoutes.map((route, index) => {
-          const Layout = route.layout || DefaultLayout;
-          const Page = route.component;
-          return (
-            <Route key={index} path={route.path} element={<Layout><Page /></Layout>} />
-          );
-        })}
-      </Routes>
-      <Outlet />
+     
    </>
   );
 };
 
-export default Header;
+export default MainLayout;
