@@ -2,6 +2,7 @@
 const AboutUsLayout = () => {
     return (
         <>
+            
         </>
     )
 }
