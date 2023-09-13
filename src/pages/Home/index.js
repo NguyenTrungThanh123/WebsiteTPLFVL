@@ -5,11 +5,15 @@ import home from './home.module.scss';
 import { NavLink } from 'react-router-dom';
 import FAlogo from '../../Image/Home/FALogo.png';
 import AccessNurses from '../../Image/Home/AccessNurses.png'
-import bannerBPO from '../../Image/Home/BPO-service-Webdesign-1200x480-removebg.png'
+import bannerBPO from '../../Image/Home/BPO-service-Webdesign-1200x480-removebg.jpg'
+import bannerHome from '../../Image/Home/Banner/Home_Banner.jpg'
 const Home = () => {
     return (
         <>
             <div className={home.content}>
+                <div className={home.bannerHome}>
+                    <img src={bannerHome} alt="Homebn"/>
+                </div>
                 <div className='container-fluid'>
                     <div className='row'>
                         <div className="col-lg-6">
@@ -86,6 +90,11 @@ const Home = () => {
                     </div>
                 </section>
                 <div className="container-fluid">
+                    <div className={home.titleContent}>
+                        <h2>
+                            What Our Clients Say
+                        </h2>
+                    </div>
                     <div className="col-lg-12">
                         <div className="row">
                             <div className="col-lg-6">
@@ -102,10 +111,10 @@ const Home = () => {
                                                     <p>
                                                         "We are building relationships with the First Virtue team through training sessions, conference calls and emails.
                                                     </p>
-                                                    <p>
-                                                    Their continuous professionalism and high quality standards have prompted the inclusion of additional counties to their range of knowledge."
-                                                    </p>
                                                     <br></br>
+                                                    <p>
+                                                        Their continuous professionalism and high quality standards have prompted the inclusion of additional counties to their range of knowledge."
+                                                    </p>
                                                     <h5 className={home.author}>Cathy Bremer, DBS International Operations</h5>
                                                 </div>
                                             </div>
@@ -134,6 +143,9 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
+                            <button className={home.btnapply} type="button">
+                                <NavLink to='/Solutions'>Learn More</NavLink>
+                            </button>
                         </div>
                     </div>
                 </div>

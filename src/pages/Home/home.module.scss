@@ -3,10 +3,17 @@ $bgcolor: linear-gradient(264deg, #6549d50d -22%, #ffffff 73%, #fb534308 78%);
 .content{
     margin-top: 60px;
 }
+.bannerHome{
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
 .bannerBPO {
     img{
         width: auto;
         height: 100%;
+        margin-top: 10px;
     }
 }
 
@@ -15,6 +22,7 @@ $bgcolor: linear-gradient(264deg, #6549d50d -22%, #ffffff 73%, #fb534308 78%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
+    padding: 30px;
 }
 
 .numberItem {
@@ -169,8 +177,7 @@ $bgcolor: linear-gradient(264deg, #6549d50d -22%, #ffffff 73%, #fb534308 78%);
     background-attachment: fixed;
     background-position: center center;
     color: #ffffff;
-    padding: 100px 300px;
-    margin: 100px 0;
+    padding: 50px 200px;
     width: 100%;
     .btnapply{
         a{
@@ -180,9 +187,15 @@ $bgcolor: linear-gradient(264deg, #6549d50d -22%, #ffffff 73%, #fb534308 78%);
 }
 .detailSay{
     h5{
-        border-top: 3px solid #ff9901;
+        border-top: 2px solid #ff9901;
+        margin: 10px;
+        text-align: right;
     }
 }
+.clientSay{
+    margin-bottom: 10px;
+}
+
 .detailClient {
     border-radius: 40px;
     border: 1.5px solid #acacac;
