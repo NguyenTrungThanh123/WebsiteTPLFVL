@@ -3,7 +3,7 @@ const OurLeadership = () => {
 
     return (
         <>
-            OurLeadership
+            <h1>Our Leadership Team</h1>
         </>
     )
 }

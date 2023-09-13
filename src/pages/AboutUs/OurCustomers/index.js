@@ -3,7 +3,7 @@ const OurCustomers = () => {
 
     return (
         <>
-                <h2>OurCustomers</h2>
+                <h1>Our Customers</h1>
         </>
     )
 }
