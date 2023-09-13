@@ -1,14 +1,13 @@
 import Footer  from "../../Footer";
-import AboutUsRouter from "../../../components/AboutUsRouter";
-const AboutUsLayout = (children) => {
+import Header from "../../Header";
+const AboutUsLayout = ({children}) => {
     return (
         <>
            
-            <div className="content">
-                {children}
-            </div>
+                <div className="content">
+                    <div>{children}</div>
+                </div>
             <Footer />
-            
         </>
 
     )

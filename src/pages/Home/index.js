@@ -5,7 +5,7 @@ import home from './home.module.scss';
 import { NavLink } from 'react-router-dom';
 import FAlogo from '../../Image/Home/FALogo.png';
 import AccessNurses from '../../Image/Home/AccessNurses.jpg'
-import bannerBPO from '../../Image/Home/BPO-service-Webdesign-1200x480.png'
+import bannerBPO from '../../Image/Home/BPO-service-Webdesign-1200x480-removebg.png'
 const Home = () => {
     return (
         <>
@@ -62,7 +62,7 @@ const Home = () => {
                                             Please click on button below to get more information.
                                             </p>
                                             <button className={home.btnapply} type="button">
-                                                <a>Learn More</a>
+                                                <NavLink to='/Solutions'>Learn More</NavLink>
                                             </button>
                                         </div>
                                     </div>

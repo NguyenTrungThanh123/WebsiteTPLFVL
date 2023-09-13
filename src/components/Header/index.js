@@ -12,7 +12,7 @@ const Header = () => {
   const navbarList = [
                       {to: 'Home',
                       name: 'Home',},
-                      {to: 'AboutUs/OurCompanies',
+                      {to: 'AboutUs',
                       name: 'About Us',},
                       {to: 'Outsourcing',
                       name: 'Outsourcing'},
@@ -28,7 +28,7 @@ const Header = () => {
                       name: 'Contact',}
                     ];
   return (
-    <BrowserRouter>
+    <>
       <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-light">
         <div className="container-fluid">
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,7 +66,7 @@ const Header = () => {
         })}
       </Routes>
       <Outlet />
-    </BrowserRouter>
+   </>
   );
 };
 

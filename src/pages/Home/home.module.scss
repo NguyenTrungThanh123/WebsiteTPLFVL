@@ -9,6 +9,9 @@ $bgcolor: linear-gradient(264deg, #6549d50d -22%, #ffffff 73%, #fb534308 78%);
     img{
         width: 100%;
         height: auto;
+        display: block;
+        margin: auto;
+       
     }
 }
 .titleBPO{
@@ -22,7 +25,8 @@ $bgcolor: linear-gradient(264deg, #6549d50d -22%, #ffffff 73%, #fb534308 78%);
         background: $colorPrimary;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        margin: 40px 20px 0 20px;
+        margin: 0px 20px;
+        align-items: center;
     }
 }
 .contentdetail{
@@ -31,7 +35,7 @@ $bgcolor: linear-gradient(264deg, #6549d50d -22%, #ffffff 73%, #fb534308 78%);
     margin: 0 20px 20px 0;
     position: relative;
     z-index: 1;
-    padding: 10px 0 10px 0;
+    padding: 10px 10px 10px 0;
     p{
         margin-bottom: 0;
     }
