@@ -1,16 +1,13 @@
-import Footer  from "../../Footer";
-import Header from "../../Header";
-const AboutUsLayout = ({children}) => {
+import { Outlet } from "react-router-dom";
+import AboutUsNav from "../../AboutUsNav";
+
+const AboutUsLayout = () => {
     return (
         <>
-           
-                <div className="content">
-                    <div>{children}</div>
-                </div>
-            <Footer />
+            <h1>AboutUS</h1>
+            <AboutUsNav />
+            <Outlet />
         </>
-
     )
 }
-
 export default AboutUsLayout;

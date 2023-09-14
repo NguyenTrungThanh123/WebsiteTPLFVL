@@ -3,7 +3,7 @@ const OurAchievements = () => {
 
     return (
         <>
-            OurAchievements    
+            <h1>Our Achievements</h1>    
         </>
     )
 }
