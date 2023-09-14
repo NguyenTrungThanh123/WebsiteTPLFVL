@@ -1,6 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import stylepages from '../stylepages.module.scss';
 import home from './home.module.scss';
 import { NavLink } from 'react-router-dom';
 import FAlogo from '../../Image/Home/FALogo.png';
