@@ -1,0 +1,22 @@
+@import '../../index.scss';
+
+.contentAbU {
+    width: 100%;
+    position: fixed;
+    .subContent {
+        background-color: #E7E9EB;
+        padding: 15px 0;
+        text-align: center;
+        a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #858282;
+        }
+        a:hover {
+            background: $colorPrimary;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+    }
+}
