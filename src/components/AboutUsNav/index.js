@@ -14,13 +14,13 @@ const AboutUsNav = () => {
     return (
         <>
             <div className={aboutusnavb.contentAbU}>
-                <div className="container">
+                <div className=".container-md">
                     <div className={aboutusnavb.subContent}>
-                        <div className="col-lg-12 d-flex justify-content-center align-items-center">
+                        <div className="col-md-12 d-flex justify-content-center align-items-center">
                             {
                                 navlist.map((navItem, index) => {
                                     return (
-                                        <div className="col-lg-2" key={index}><NavLink to={navItem.to}><FontAwesomeIcon icon={navItem.icon} /> {navItem.name}</NavLink></div>
+                                        <div className="col-md-2" key={index}><NavLink to={navItem.to}><FontAwesomeIcon icon={navItem.icon} /> {navItem.name}</NavLink></div>
                                     )
                                 })
                             }

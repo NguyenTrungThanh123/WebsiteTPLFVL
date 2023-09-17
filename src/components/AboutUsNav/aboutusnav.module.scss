@@ -3,6 +3,7 @@
 .contentAbU {
     width: 100%;
     position: fixed;
+    z-index: 1000;
     .subContent {
         background-color: #E7E9EB;
         padding: 15px 0;
@@ -17,12 +18,6 @@
             background: $colorPrimary;
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
-        }
-        a:active{
-            background: $colorPrimary;
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-            position: relative;
         }
     }
 }

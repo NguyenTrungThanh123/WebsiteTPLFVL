@@ -1,6 +1,14 @@
+@import '../../../index.scss';
+$bgcolor: linear-gradient(264deg, #6549d50d -22%, #ffffff 73%, #fb534308 78%);
 .imgAchieve{
     margin-top: 60px;
     img{
-        height: 30rem;
+        height: 100%;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    button{
+        color: black;
     }
 }
