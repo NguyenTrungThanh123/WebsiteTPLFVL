@@ -7,7 +7,7 @@ const AboutUsLayout = () => {
     return (
         <>
         <AboutUsNav />
-                <Outlet />
+        <Outlet />
         </>
     )
 }

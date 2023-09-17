@@ -18,5 +18,11 @@
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
         }
+        a:active{
+            background: $colorPrimary;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            position: relative;
+        }
     }
 }
