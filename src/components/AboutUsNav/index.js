@@ -14,7 +14,7 @@ const AboutUsNav = () => {
     return (
         <>
             <div className={aboutusnavb.contentAbU}>
-                <div className=".container-md">
+                <div className="container-fluid">
                     <div className={aboutusnavb.subContent}>
                         <div className="col-md-12 d-flex justify-content-center align-items-center">
                             {
