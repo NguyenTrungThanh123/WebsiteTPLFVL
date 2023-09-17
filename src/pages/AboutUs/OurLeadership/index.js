@@ -22,11 +22,27 @@ const OurLeadership = () => {
             {
                 leadershipList.map((leadershipListItem,index) => {
                     return (
-                        <div className={LeadershipStyle.avatar}>
+                       <>
+                        { index === 0 && <div className={LeadershipStyle.ceo}>
                             <img src={leadershipListItem.url} alt={leadershipListItem.name} />
                             <div className={LeadershipStyle.name}>{leadershipListItem.name}</div>
                             <div className={LeadershipStyle.jobTitle}>{leadershipListItem.jobTitle}</div>
+                        </div>}
+                       {
+                         index > 0 && index < 4 && <div className={LeadershipStyle.group1}>
+                         <img src={leadershipListItem.url} alt={leadershipListItem.name} />
+                         <div className={LeadershipStyle.name}>{leadershipListItem.name}</div>
+                         <div className={LeadershipStyle.jobTitle}>{leadershipListItem.jobTitle}</div>
+                         </div>
+                       }
+                       {
+                        index > 3 && index < 7 && <div className={LeadershipStyle.group2}>
+                        <img src={leadershipListItem.url} alt={leadershipListItem.name} />
+                        <div className={LeadershipStyle.name}>{leadershipListItem.name}</div>
+                        <div className={LeadershipStyle.jobTitle}>{leadershipListItem.jobTitle}</div>
                         </div>
+                       }
+                       </>
                     )
                 })
             }
