@@ -1,10 +1,10 @@
 import WorkFromHome from "../pages/WorkFromHome";
 import Home from "../pages/Home";
-import AboutUs from "../components/Navigation/AboutUsNav";
+import AboutUsNav from "../components/Navigation/AboutUsNav";
 import Careers from "../pages/Careers";
 import Contact from "../pages/Contact";
 import News from "../pages/News";
-import Outsourcing from "../pages/Outsourcing";
+import OutsourcingNav from "../components/Navigation/OutsourcingNav";
 import Solutions from "../pages/Solutions";
 import PrivacyPolice from "../pages/PrivacyPolicy";
 import OurCompanies from "../pages/AboutUs/OurCompanies";
@@ -20,8 +20,8 @@ import OutsourcingPage from "../pages/Outsourcing/OutsourcingPage"
 const  publicRoutes = [
     {path: '/', component: Home},
     {path: '/Home', component: Home},
-    {path: '/AboutUs/*', component: AboutUs},
-    {path: '/Outsourcing/*', component: Outsourcing},
+    {path: '/AboutUs/*', component: AboutUsNav},
+    {path: '/Outsourcing/*', component: OutsourcingNav},
     {path: '/Solutions', component: Solutions},
     {path: '/WorkFromHome', component: WorkFromHome},
     {path: '/News', component: News},
