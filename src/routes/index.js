@@ -1,6 +1,6 @@
 import WorkFromHome from "../pages/WorkFromHome";
 import Home from "../pages/Home";
-import AboutUs from "../components/Navigation/AboutUs";
+import AboutUs from "../components/Navigation/AboutUsNav";
 import Careers from "../pages/Careers";
 import Contact from "../pages/Contact";
 import News from "../pages/News";
@@ -12,14 +12,16 @@ import OurLeadership from "../pages/AboutUs/OurLeadership";
 import OurAchievements from "../pages/AboutUs/OurAchievements";
 import OurActivities from "../pages/AboutUs/OurActivities";
 import OurCustomers from "../pages/AboutUs/OurCustomers";
-
-
+import AdvantageOutsourcing from "../pages/Outsourcing/AdvantageOutsourcing";
+import Faqs from "../pages/Outsourcing/FaqsOutsourcing"
+import Tips from  "../pages/Outsourcing/TipsOutsourcing"
+import OutsourcingPage from "../pages/Outsourcing/OutsourcingPage"
 
 const  publicRoutes = [
     {path: '/', component: Home},
     {path: '/Home', component: Home},
     {path: '/AboutUs/*', component: AboutUs},
-    {path: '/Outsourcing', component: Outsourcing},
+    {path: '/Outsourcing/*', component: Outsourcing},
     {path: '/Solutions', component: Solutions},
     {path: '/WorkFromHome', component: WorkFromHome},
     {path: '/News', component: News},
@@ -34,9 +36,16 @@ const AboutUsRoutes = [
     {path: '/OurAchievements', component:OurAchievements, },
     {path: '/OurActivities', component: OurActivities, },
     {path: '/OurCustomers', component: OurCustomers,}
+];
+const OutsourcingRoutes = [
+    {path: '/', component: OutsourcingPage, },
+    {path: '/Outsourcing', component: OutsourcingPage, },
+    {path: '/Advantage', component: AdvantageOutsourcing, },
+    {path: '/Faqs', component:Faqs, },
+    {path: '/Tips', component: Tips, },
 ]
 const  privateRoutes = [];
 
-export  {publicRoutes, privateRoutes,AboutUsRoutes} 
+export  {publicRoutes, privateRoutes,AboutUsRoutes, OutsourcingRoutes} 
 
 

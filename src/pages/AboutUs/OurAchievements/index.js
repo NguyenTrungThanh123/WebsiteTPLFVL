@@ -40,7 +40,7 @@ const OurAchievements = () => {
                             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                                 <div className="carousel-inner justify-content-center align-items-center">
                                 <div className="carousel-item active">
-                                        <img className="d-block" src={require('../../../Image/AboutUs/Our_Achievements/FVL-DN-KHCN.png')} />
+                                        <img alt="FVL-DN-KHCN" className="d-block" src={require('../../../Image/AboutUs/Our_Achievements/FVL-DN-KHCN.png')} />
                                     </div>
                                     {
                                         images.map((imageItem, index) => {

@@ -40,7 +40,7 @@ const OurActivities = () => {
         { url: congra1, nameImage: congra1, title: 'Congratulations 1' },
         { url: hpbd2, nameImage: hpbd2, title: 'Happy Birthday 2' },
     ]
-    const ImageWeGive = [,
+    const ImageWeGive = [
         { url: binhdinh1, nameImage: binhdinh1, title: 'Binh Dinh 1' },
         { url: binhdinh2, nameImage: binhdinh2, title: 'Binh Dinh 2' },
         { url: wegive4, nameImage: wegive4, title: 'We Give 4' },
@@ -61,7 +61,7 @@ const OurActivities = () => {
                             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                                 <div className="carousel-inner justify-content-center align-items-center">
                                     <div className="carousel-item active">
-                                        <img className="d-block" src={require('../../../Image/AboutUs/Our_Activities/WeWork/kyketvoiHutech.jpg')} />
+                                        <img alt="Ky ket voi Hutech" className="d-block" src={require('../../../Image/AboutUs/Our_Activities/WeWork/kyketvoiHutech.jpg')} />
                                     </div>
                                     {
                                         ImagesWeWork.map((imageItem, index) => {
@@ -89,13 +89,13 @@ const OurActivities = () => {
                             <div id="carouselExampleControls2" className="carousel slide" data-bs-ride="carousel">
                                 <div className="carousel-inner justify-content-center align-items-center">
                                     <div className="carousel-item active">
-                                        <img className="d-block" src={require('../../../Image/AboutUs/Our_Activities/WePlay/1.jpg')} />
+                                        <img alt="image1" className="d-block" src={require('../../../Image/AboutUs/Our_Activities/WePlay/1.jpg')} />
                                     </div>
                                     {
                                         ImageWePlay.map((imageItem, index) => {
                                             return (
                                                 <div key={index} className="carousel-item">
-                                                    <img className="d-block" src={imageItem.url} alt={imageItem.title} />
+                                                    <img  className="d-block" src={imageItem.url} alt={imageItem.title} />
                                                 </div>
                                             )
                                         })
@@ -116,7 +116,7 @@ const OurActivities = () => {
                             <div id="carouselExampleControls3" className="carousel slide" data-bs-ride="carousel">
                                 <div className="carousel-inner justify-content-center align-items-center">
                                     <div className="carousel-item active">
-                                        <img className="d-block" src={require('../../../Image/AboutUs/Our_Activities/WeGive/1.jpg')} />
+                                        <img alt="image1" className="d-block" src={require('../../../Image/AboutUs/Our_Activities/WeGive/1.jpg')} />
                                     </div>
                                     {
                                 ImageWeGive.map((imageItem, index) => {

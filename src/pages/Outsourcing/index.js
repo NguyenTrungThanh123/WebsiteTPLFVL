@@ -1,8 +1,9 @@
+import OutsourcLayout from "../../components/Layout/OutsourcLayout"
 const Outsourcing = () => {
     return ( 
-        <>
-            Outsourcing Page
-        </>
+       
+            <OutsourcLayout/>
+       
      );
 }
 

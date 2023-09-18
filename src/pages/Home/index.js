@@ -85,7 +85,7 @@ const Home = () => {
                             <p>When you get on the phone with us, you'll notice the difference immediately. With First Virtue & Transcend People, you'll experience professional, personalized, and responsive customer service - and our managers will ensure a smooth integration and ongoing deliverables.</p>
                             <p>Get to know the people you'll be working with directly - and you'll understand why we do it better.</p>
                         </div>
-                        <div className={home.btnapply}><NavLink to='/AboutUs'>About Us</NavLink></div>
+                        <div className={home.btnapply}><NavLink to='/AboutUs/OurCompanies'>About Us</NavLink></div>
                     </div>
                 </div>
                 <div className="container-fluid">
