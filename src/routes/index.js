@@ -1,11 +1,11 @@
 import WorkFromHome from "../pages/WorkFromHome";
 import Home from "../pages/Home";
-import AboutUsNav from "../components/Navigation/AboutUsNav";
+import AboutUsNav from "../components/Navigation/AboutUsNavigation";
 import Careers from "../pages/Careers";
 import Contact from "../pages/Contact";
 import News from "../pages/News";
-import OutsourcingNav from "../components/Navigation/OutsourcingNav";
-import Solutions from "../pages/Solutions";
+import OutsourcingNavigation from "../components/Navigation/OutsourcingNavigation";
+import SolutionNavigation from "../components/Navigation/SolutionNavigation";
 import PrivacyPolice from "../pages/PrivacyPolicy";
 import OurCompanies from "../pages/AboutUs/OurCompanies";
 import OurLeadership from "../pages/AboutUs/OurLeadership";
@@ -16,13 +16,18 @@ import AdvantageOutsourcing from "../pages/Outsourcing/AdvantageOutsourcing";
 import Faqs from "../pages/Outsourcing/FaqsOutsourcing"
 import Tips from  "../pages/Outsourcing/TipsOutsourcing"
 import OutsourcingPage from "../pages/Outsourcing/OutsourcingPage"
+import SolutionPage  from "../pages/Solutions/SolutionsPage";
+import AdvantageSolution from "../pages/Solutions/AdvantageSolution";
+import CaseStudies from "../pages/Solutions/CaseStudies";
+import Portfolio from "../pages/Solutions/Portfolio";
+import Testimonials from "../pages/Solutions/Testimonials";
 
 const  publicRoutes = [
     {path: '/', component: Home},
     {path: '/Home', component: Home},
     {path: '/AboutUs/*', component: AboutUsNav},
-    {path: '/Outsourcing/*', component: OutsourcingNav},
-    {path: '/Solutions', component: Solutions},
+    {path: '/Outsourcing/*', component: OutsourcingNavigation},
+    {path: '/Solutions/*', component: SolutionNavigation},
     {path: '/WorkFromHome', component: WorkFromHome},
     {path: '/News', component: News},
     {path: '/Careers', component: Careers},
@@ -44,8 +49,19 @@ const OutsourcingRoutes = [
     {path: '/Faqs', component:Faqs, },
     {path: '/Tips', component: Tips, },
 ]
-const  privateRoutes = [];
 
-export  {publicRoutes, privateRoutes,AboutUsRoutes, OutsourcingRoutes} 
+const SolutionRoutes = [
+    {path: '/', component: OutsourcingPage, },
+    {path: '/Solutions', component: SolutionPage, },
+    {path: '/Advantage', component: AdvantageSolution, },
+    {path: '/Portfolio', component:Portfolio, },
+    {path: '/Testimonials', component: Testimonials, }, 
+    {path: '/CaseStudies', component: CaseStudies, },
+]
+const  privateRoutes = [
+
+];
+
+export  {publicRoutes, privateRoutes,AboutUsRoutes, OutsourcingRoutes,SolutionRoutes} 
 
 

@@ -1,19 +1,20 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileCirclePlus, faUsersGear, faCircleQuestion, faLightbulb,faAddressCard } from '@fortawesome/free-solid-svg-icons'
-import outsourcingImage from  "../../Image/Outsourcing/outsourcing.jpg"
+import { faUsersGear, faFileCirclePlus,faCircleQuestion, faLightbulb, faAddressCard} from '@fortawesome/free-solid-svg-icons'
+import solutionImage from  "../../Image/Solution/solution-vector-colored-banner_104589-69.jpg"
 import { NavLink } from 'react-router-dom';
-const sidebar = () => {
+const sidebarSolution = () => {
     const navlist = [
-        {to: 'Outsourcing',  name: 'OutsourcingPage', icon: faUsersGear },
-        {to: 'Advantage',  name: 'AdvantageOutsourcing',icon : faFileCirclePlus },
-        {to: 'Faqs',  name: 'Faqs', icon: faCircleQuestion},
-        {to: 'Tips',  name: 'Tips', icon: faLightbulb},
+        {to: 'Solutions',  name: 'Solutions', icon: faUsersGear },
+        {to: 'Advantage',  name: 'The FVL & TPL Advantage', icon: faUsersGear },
+        {to: 'Portfolio',  name: 'Portfolio',icon : faFileCirclePlus },
+        {to: 'Testimonials',  name: 'Testimonials', icon: faCircleQuestion},
+        {to: 'CaseStudies',  name: 'Case Studies', icon: faLightbulb},
         {to: '/contact', name: 'Contact', icon: faAddressCard}
     ]
     
     return (
         <>
-            <img src={outsourcingImage} alt='Outsourcing' />
+            <img src={solutionImage} alt='Solution' />
             <ul>
                 {
                    navlist.map((navItem, index) => {
@@ -34,4 +35,4 @@ const sidebar = () => {
     )
 }
 
-export default sidebar;
+export default sidebarSolution;
