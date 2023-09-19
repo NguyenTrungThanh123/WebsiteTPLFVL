@@ -1,17 +1,16 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsersGear, faFileCirclePlus,faCircleQuestion, faLightbulb, faAddressCard} from '@fortawesome/free-solid-svg-icons'
+import { faArrowUpRightDots,faLightbulb, faBars,faStamp, faBook} from '@fortawesome/free-solid-svg-icons'
 import solutionImage from  "../../Image/Solution/solution-vector-colored-banner_104589-69.jpg"
 import { NavLink } from 'react-router-dom';
 const sidebarSolution = () => {
     const navlist = [
-        {to: 'Solutions',  name: 'Solutions', icon: faUsersGear },
-        {to: 'Advantage',  name: 'The FVL & TPL Advantage', icon: faUsersGear },
-        {to: 'Portfolio',  name: 'Portfolio',icon : faFileCirclePlus },
-        {to: 'Testimonials',  name: 'Testimonials', icon: faCircleQuestion},
+        {to: 'Solutions',  name: 'Solutions', icon: faLightbulb },
+        {to: 'Advantage',  name: 'The FVL & TPL Advantage', icon: faArrowUpRightDots },
+        {to: 'Portfolio',  name: 'Portfolio',icon : faBars },
+        {to: 'Testimonials',  name: 'Testimonials', icon: faStamp},
         {to: 'CaseStudies',  name: 'Case Studies', icon: faLightbulb},
-        {to: '/contact', name: 'Contact', icon: faAddressCard}
+        {to: '/contact', name: 'Contact', icon: faBook}
     ]
-    
     return (
         <>
             <img src={solutionImage} alt='Solution' />

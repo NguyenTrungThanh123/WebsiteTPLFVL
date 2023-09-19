@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faChartLine, faIdCard, faGlobe, faCalculator } from '@fortawesome/free-solid-svg-icons'
 import SolutionsStyle from "./solutionStyle.module.scss"
-
 const SolutionPage = () => {
     const serviceList = [
         {
@@ -20,7 +19,14 @@ const SolutionPage = () => {
             icon :  faCalculator,  title : 'Accounting:', content : ['Book Keeping', 'Journal Entries', 'Billing and Invoicing']                                           
         },
     ]
-    
+
+    const stepList =  [
+        { title: 'Step 1: Project Proposal', content: ['Identify Objectives and Deliverables','Map Procedures and Metrics','Project Review and Education']},
+        { title: 'Step 2: Project Launch', content: ['Environmental Set-Up','Resource Allocation','Client-Team Training']},
+        { title: 'Step 3: Project Implementation', content: ['Service and Performance Monitoring','Quality Control','Time and Production Reporting']},
+        
+    ]
+   
 
     return (
         <>
@@ -40,21 +46,40 @@ const SolutionPage = () => {
                 {
                     serviceList.map((serviceItem, index) => {
                         return (
-                            <>
+                            <div key={index}>
                                 <FontAwesomeIcon icon={serviceItem.icon} />
                                 <div className={SolutionsStyle.subTitle}>{serviceItem.title}</div>
                                 <div className={SolutionsStyle.subcontent}>
                                     {
-                                        serviceItem.content.map((subcontent, index) => {
+                                        serviceItem.content.map((subcontent, subindex) => {
                                             return (
-                                                <>
+                                                <div key={subindex}>
                                                     {subcontent}
-                                                </>
+                                                </div>
                                             )
                                         })
                                     }
                                 </div>
-                            </>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+            <div className={SolutionsStyle.title}>Our Process</div>
+            <div className={SolutionsStyle.content}>
+                <div className={SolutionsStyle.paragraph}>
+                    From proposal to implementation to follow-up of your BPO project, we are committed to providing superior ease of integration and friendly and responsive customer service. 
+                    Our managers will work closely with your team to ensure timely and accurate results are delivered each and every time.
+                </div>
+                {
+                    stepList.map((stepItem,index) => {
+                        return  (
+                            <div key={index}>
+                                 <div className={SolutionsStyle.subTitle}>{stepItem.title}</div>
+                                 <div className={SolutionsStyle.subcontent}>{
+                                        stepItem.content.map((content,subindex) => <div key={subindex}>{content}</div> )
+                                 }</div>
+                            </div>
                         )
                     })
                 }
