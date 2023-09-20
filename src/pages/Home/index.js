@@ -11,7 +11,7 @@ const Home = () => {
         <>
             <div className={home.content}>
                 <div className={home.bannerHome}>
-                    <img src={bannerHome} alt="Homebn"/>
+                    <img src={bannerHome} alt="Homebn" />
                 </div>
                 <div className='container-fluid'>
                     <div className='row'>

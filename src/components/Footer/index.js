@@ -10,7 +10,7 @@ import isoLogo from '../../Image/Footer/iso27001.png'
 const Footer = () => {
     return (
         <>
-            <div className={footer.inforfooter}>
+            <div className={footer.inforfooter} >
                 <div className='container-fluid'>
                     <div className="row">
                         <div className='col-lg-4'>

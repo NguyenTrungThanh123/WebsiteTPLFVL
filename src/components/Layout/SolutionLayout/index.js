@@ -4,10 +4,10 @@ import { Outlet } from "react-router-dom";
 
 
 const SolutionLayout = () => {
-    return(
+    return (
         <>
-            <Outlet />
-            <SidebarSolution />
+                <Outlet />
+                <SidebarSolution />
         </>
     )
 

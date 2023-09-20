@@ -1,29 +1,35 @@
 /* style.module.css */
 @import '../../index.scss';
 
-.logoFVL{
-    height: 36px;
-    width: 140px;
-    margin: auto;
+.logo {
+    justify-content: center;
+
+    a {
+        padding: 5px;
+    }
+
+    .logoFVL {
+        height: 36px;
+        width: 140px;
+    }
+
+    .logoTPL {
+        height: 36px;
+        width: 87.9px;
+    }
 }
-.logoTPL{
-    height: 36px;
-    width: 87.9px;
-    margin: auto
-}
-.navlist{
-    a:hover{
+
+.navlist {
+        font-size: 1.05rem;
+        font-weight: 650;
+        color: #858282;
+
+    a:focus, a:hover{
         background: $colorPrimary;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
     }
-    a:active{
-        color: $colorPrimary !important;
-    }
-    a{
-        font-size: 1.1rem;
-        margin-right: 15px;
-        font-weight: 700;
-        color: #858282;
+    .active{
+        color: #858282 !important;
     }
 }

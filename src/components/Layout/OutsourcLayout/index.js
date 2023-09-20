@@ -4,10 +4,10 @@ import { Outlet } from "react-router-dom";
 
 
 const outsourcLayout = () => {
-    return(
+    return (
         <>
-            <Outlet />
-            <Sidebar />
+                <Outlet />
+                <Sidebar />
         </>
     )
 
