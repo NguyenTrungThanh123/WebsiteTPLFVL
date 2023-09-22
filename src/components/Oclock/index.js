@@ -1,21 +1,22 @@
 import React, { useEffect, useRef, useState } from 'react';
-import styles from './oclockSanTime.module.scss'// Import CSS Module
-function Clock() {
-const canvasRef = useRef(null);
-const [currentTime, setCurrentTime] = useState(getSanFranciscoTime());
+import styles from './oclockSanTime.module.scss'; // Import CSS Module
 
-function getSanFranciscoTime() {
-    const utcOffset = -7; // San Francisco thường dùng UTC -7
+function Clock({ utcOffset }) {
+  const canvasRef = useRef(null);
+  const [currentTime, setCurrentTime] = useState(getLocalTime(utcOffset));
+  const [currentDate, setCurrentDate] = useState(getLocalTime(utcOffset));
+
+  function getLocalTime(offset) {
     const now = new Date();
-    const utcMilliseconds = now.getTime() + (now.getTimezoneOffset() * 60000);
-    const sanFranciscoMilliseconds = utcMilliseconds + (utcOffset * 3600000);
-    return new Date(sanFranciscoMilliseconds);
-}
+    const utcMilliseconds = now.getTime() + now.getTimezoneOffset() * 60000;
+    const localMilliseconds = utcMilliseconds + offset * 3600000;
+    return new Date(localMilliseconds);
+  }
 
-useEffect(() => {
+  useEffect(() => {
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext("2d");
-    const size = Math.min(window.innerWidth, window.innerHeight) * 0.2;
+    const ctx = canvas.getContext('2d');
+    const size = Math.min(window.innerWidth * 0.2, window.innerHeight * 0.2);
     canvas.width = size;
     canvas.height = size;
 
@@ -25,11 +26,12 @@ useEffect(() => {
     setInterval(drawClock, 1000);
 
     function drawClock() {
-    const now = getSanFranciscoTime();
-    setCurrentTime(now); // Cập nhật thời gian hiện tại của San Francisco
-    drawFace(ctx, radius);
-    drawNumbers(ctx, radius);
-    drawTime(ctx, radius, now);
+      const now = getLocalTime(utcOffset);
+      setCurrentTime(now);
+      setCurrentDate(now);
+      drawFace(ctx, radius);
+      drawNumbers(ctx, radius);
+      drawTime(ctx, radius, now);
     }
 
     function drawFace(ctx, radius) {
@@ -51,14 +53,14 @@ useEffect(() => {
         ctx.font = radius * 0.15 + "px Cyrillic";
         ctx.textBaseline = "middle";
         ctx.textAlign = "center";
-        
+       
         const romanNumerals = ["XII","I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI"];
         
         for (let num = 0; num < 12; num++) {
           const ang = (num * Math.PI / 6); // Tính góc dựa trên số La Mã (I, II, III, ...)
           const x = radius * 0.87 * Math.sin(ang); // Tính tọa độ x
           const y = -radius * 0.87 * Math.cos(ang); // Tính tọa độ y
-          
+          ctx.fillStyle = '#333';
           ctx.fillText(romanNumerals[num], x, y);
         }
       }
@@ -116,17 +118,15 @@ useEffect(() => {
     ctx.rotate(-pos);
     }
 
-}, []);
-
+}, [utcOffset]);
+const formatDate = { year: 'numeric', month: 'short', day: '2-digit' };
 return (
     <div className={styles['clock-container']}> {/* Use CSS Module class names */}
     <canvas ref={canvasRef} className={styles.clock}>
         Your browser does not support the HTML5 canvas tag.
     </canvas>
-    <div className={styles.time}>
-        {currentTime.toLocaleTimeString()}
-    </div>
-    <h1>San Francisco Time</h1>
+    <div className={styles.time}>{currentTime.toLocaleTimeString()}</div>
+    <div className={styles.date}>{currentDate.toLocaleDateString(undefined, formatDate)}</div>
     </div>
 );
 }

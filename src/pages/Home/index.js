@@ -5,18 +5,12 @@ import { NavLink } from 'react-router-dom';
 import FAlogo from '../../Image/Home/FALogo.png';
 import AccessNurses from '../../Image/Home/AccessNurses.png'
 import bannerBPO from '../../Image/Home/BPO-service-Webdesign-1200x480-removebg.jpg'
-import bannerHome from '../../Image/Home/Banner/Home_Banner.jpg'
-import OclockVNTime from "../../components/Oclock/VNTime";
-import OclockSanTime from   "../../components/Oclock/SanTime"
+import OclockBanner from "../../components/Banner/OclockBanner";
 const Home = () => {
     return (
         <>
             <div className={home.content}>
-                <div className={home.bannerHome}>
-                    
-                    <OclockVNTime />
-                    <OclockSanTime />
-                </div>
+                <OclockBanner />
                 <div className='container-fluid'>
                     <div className='row'>
                         <div className="col-lg-6">
