@@ -1,0 +1,28 @@
+/* Clock.module.scss */
+@import '../../../index.scss';
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .clock {
+    background: linear-gradient(66.75deg, #00a5cf 0.87%, #d12bec 100%);
+  border: 4px solid $colorPrimary; /* Điều chỉnh độ dày của đường viền ở đây */
+  border-radius: 50%;
+  }
+  
+  
+  .time {
+    font-size: 24px;
+    color: black;
+  }
+  
+  .hand {
+    background-color: #333; /* Màu của các kim */
+  }
+  
+  .second-hand {
+    background-color: red; /* Màu của kim giây */
+  }

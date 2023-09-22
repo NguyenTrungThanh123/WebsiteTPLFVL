@@ -6,12 +6,16 @@ import FAlogo from '../../Image/Home/FALogo.png';
 import AccessNurses from '../../Image/Home/AccessNurses.png'
 import bannerBPO from '../../Image/Home/BPO-service-Webdesign-1200x480-removebg.jpg'
 import bannerHome from '../../Image/Home/Banner/Home_Banner.jpg'
+import OclockVNTime from "../../components/Oclock/VNTime";
+import OclockSanTime from   "../../components/Oclock/SanTime"
 const Home = () => {
     return (
         <>
             <div className={home.content}>
                 <div className={home.bannerHome}>
-                    <img src={bannerHome} alt="Homebn" />
+                    
+                    <OclockVNTime />
+                    <OclockSanTime />
                 </div>
                 <div className='container-fluid'>
                     <div className='row'>
