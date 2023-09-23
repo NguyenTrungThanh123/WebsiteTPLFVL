@@ -22,7 +22,6 @@ const OclockBanner = () => {
                                             <Oclock utcOffset={oclockItem.timezone} />
                                             <h4 style={{textAlign: "center"}}>{oclockItem.nameCity}</h4>
                                         </div>
-                                   
                             )  
                         })
                     }
