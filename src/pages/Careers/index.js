@@ -1,38 +1,49 @@
-import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
+import Modal from 'react-modal';
 import hiringDataProcessing from '../../Image/Careers/hiring_dataProcessing.png'
 import { CareersList } from '../../components/Careers';
 import careersStyle from  './careers.module.scss'
 
 const Careers = () => {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [modalContent, setModalContent] = useState();
+    
+    const openModal = (content) => {
+        setModalContent(content);
+        setModalIsOpen(true);
+    } 
+    const closeModal = () =>{
+        setModalIsOpen(false);
+    }
     return ( 
-        <div>
-            <img src={hiringDataProcessing} alt='Hiring Data Processing' />
-            <div className={careersStyle.content}>
-                {
-                    CareersList.map((careersItem, index) => {
-                        return (
-                           <div key={index}>
-                                <div className={careersStyle.jobName} >{careersItem.jobName}</div>
-                                <div className={careersStyle.datePublish} >{careersItem.datePublish}</div>
-                                <div className={careersStyle.title} >{careersItem.title}</div>
-                                {careersItem.jobMission.map((jobMissionDetail, index)=>{
-                                    return (
-                                        <div key={index}>
-                                            <div className={careersStyle.jobMission}>{careersItem.iconCircle}{jobMissionDetail}</div>
-                                        </div>
-                                    )
-                                })}
-                                <NavLink to="/CareerDetails" >Job Details</NavLink>
-                                <a href='https://forms.gle/61BoPx74zQTUhxRH6' target='_blank' rel="noopener noreferrer">Apply Now</a>
-                               
-                           </div>
-                        )
-                    })
-                }
-            </div>            
-        </div>
-     );
-
+       <>
+            
+                <div>
+                    {CareersList.map((job) => (
+                        <div key={job.ID}>
+                            
+                        <h2>{job.jobName}</h2>
+                        <h3>Date Published: {job.datePublish}</h3>
+                        <h3>title: {Object.keys(job.title).map((titleKey, index) => { return (<div key={index}>{titleKey}</div>) } )}</h3>
+                        <ul>
+                            {job.title && job.title.jobMission && job.title.jobMission.map((mission, missionIndex) => (
+                            <li key={missionIndex}>{mission}</li>
+                            ))}
+                        </ul>
+                        </div>
+                    ))}
+            </div>
+            <Modal  isOpen={modalIsOpen}
+                    onRequestClose={closeModal}
+                    contentLabel = 'MOdal Example'
+            >
+                <h2>Content</h2>
+                <p>{modalContent}</p>
+                <button onClick={closeModal}>Close</button>
+            </Modal>           
+        
+       </>
+    )
 }
 
 export default Careers;
