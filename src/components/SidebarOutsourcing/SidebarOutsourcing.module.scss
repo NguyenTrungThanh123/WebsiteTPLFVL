@@ -1,0 +1,35 @@
+@import '../../index.scss';
+
+.navOurS {
+    align-items: center;
+    .oursImg {
+        img {
+            width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .oursLink {
+        margin: 20px 0px 0px 10px;
+        color: #858282;
+        font-size: 1.1rem;
+        a {
+            text-decoration: none;
+            color: #858282;
+        }
+
+        a:hover {
+            background: $colorPrimary;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        a:focus {
+            background: $colorPrimary;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}

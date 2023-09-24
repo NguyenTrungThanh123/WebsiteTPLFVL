@@ -12,9 +12,10 @@ $bgcolor: linear-gradient(264deg, #6549d50d -22%, #ffffff 73%, #fb534308 78%);
 }
 .bannerBPO {
     img{
-        width: auto;
+        width: 100%;
         height: 100%;
-        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
         border-radius: 10px;
     }
 }
@@ -72,7 +73,7 @@ $bgcolor: linear-gradient(264deg, #6549d50d -22%, #ffffff 73%, #fb534308 78%);
     position: absolute;
     width: 0;
     height: 50%;
-    transition: all 0.5s ease-in;
+    transition: all 0.7s ease-in;
     background: $colorPrimary;
     z-index: -1;
     top: 0;
@@ -90,7 +91,7 @@ $bgcolor: linear-gradient(264deg, #6549d50d -22%, #ffffff 73%, #fb534308 78%);
     position: absolute;
     width: 0;
     height: 50%;
-    transition: all 0.5s ease-in;
+    transition: all 0.7s ease-in;
     background: $colorPrimary;
     z-index: -1;
     bottom: 0;
@@ -241,7 +242,7 @@ $bgcolor: linear-gradient(264deg, #6549d50d -22%, #ffffff 73%, #fb534308 78%);
     position: absolute;
     width: 0;
     height: 50%;
-    transition: all 0.5s ease-in;
+    transition: all 0.7s ease-in;
     background: $colorPrimary;
     z-index: -1;
     top: 0;
@@ -259,7 +260,7 @@ $bgcolor: linear-gradient(264deg, #6549d50d -22%, #ffffff 73%, #fb534308 78%);
     position: absolute;
     width: 0;
     height: 50%;
-    transition: all 0.5s ease-in;
+    transition: all 0.7s ease-in;
     background: $colorPrimary;
     z-index: -1;
     bottom: 0;

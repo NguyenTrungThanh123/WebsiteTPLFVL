@@ -12,60 +12,60 @@ const Home = () => {
             <div className={home.content}>
                 <OclockBanner />
                 <div className='container-fluid'>
-                    <div className='row'>
-                        <div className="col-lg-6">
-                            <div className={home.bannerBPO}>
-                                <div className="d-flex align-items-center justify-content-center">
-                                    <img src={bannerBPO} alt="BPO" />
+                    <div className="col-lg-12">
+                        <div className='row'>
+                            <div className="col-lg-6">
+                                <div className={home.bannerBPO}>
+                                        <img className="align-items-center justify-content-center" src={bannerBPO} alt="BPO" />
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className={home.titleContent}>
-                                <h2>Business Process Outsourcing</h2>
-                            </div>
-                            <div className={home.contentdetail}>
-                                <div className="d-flex align-items-center flex-md-row flex-sm-column flex-column">
-                                    <div className={home.numberItem}>
-                                        <h2>01</h2>
-                                    </div>
-                                    <div className={home.contentSub}>
-                                        <h3>BPO Solutions</h3>
-                                        <p>
-                                            Optimize your business performance with our customized business process outsourcing (BPO) solutions.
-                                            Reduce management burden, inefficiencies, and costs - and focus on taking your business to the next level.
-                                            Today, outsourcing your day-to-day business processes is no longer just a viable option, it's a strategic business decision.
-                                        </p>
+                            <div className="col-lg-6">
+                                <div className={home.titleContent}>
+                                    <h2>Business Process Outsourcing</h2>
+                                </div>
+                                <div className={home.contentdetail}>
+                                    <div className="d-flex align-items-center flex-md-row flex-sm-column flex-column">
+                                        <div className={home.numberItem}>
+                                            <h2>01</h2>
+                                        </div>
+                                        <div className={home.contentSub}>
+                                            <h3>BPO Solutions</h3>
+                                            <p>
+                                                Optimize your business performance with our customized business process outsourcing (BPO) solutions.
+                                                Reduce management burden, inefficiencies, and costs - and focus on taking your business to the next level.
+                                                Today, outsourcing your day-to-day business processes is no longer just a viable option, it's a strategic business decision.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className={home.contentdetail}>
-                                <div className="d-flex align-items-center flex-md-row flex-sm-column flex-column">
-                                    <div className={home.numberItem}>
-                                        <h2>02</h2>
-                                    </div>
-                                    <div className={home.contentSub}>
-                                        <h3>First Virtue & Transcend People</h3>
-                                        <p>
-                                            First Virtue & Transcend People offers your business a wide range of outsourcing solutions that will alleviate the ever-growing demands on your business, such as data entry services, e-commerce support, high-level document classification, pre-sales or market research outsourcing, and much more.
-                                        </p>
+                                <div className={home.contentdetail}>
+                                    <div className="d-flex align-items-center flex-md-row flex-sm-column flex-column">
+                                        <div className={home.numberItem}>
+                                            <h2>02</h2>
+                                        </div>
+                                        <div className={home.contentSub}>
+                                            <h3>First Virtue & Transcend People</h3>
+                                            <p>
+                                                First Virtue & Transcend People offers your business a wide range of outsourcing solutions that will alleviate the ever-growing demands on your business, such as data entry services, e-commerce support, high-level document classification, pre-sales or market research outsourcing, and much more.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className={home.contentdetail}>
-                                <div className="d-flex align-items-center flex-md-row flex-sm-column flex-column">
-                                    <div className={home.numberItem}>
-                                        <h2>03</h2>
-                                    </div>
-                                    <div className={home.contentSub}>
-                                        <h3>Learn More</h3>
-                                        <p>
-                                            Learn more about how our BPO solutions can help you enhance your business.
-                                            Please click on button below to get more information.
-                                        </p>
-                                        <button className={home.btnapply} type="button">
-                                            <NavLink to='/Solutions'>Learn More</NavLink>
-                                        </button>
+                                <div className={home.contentdetail}>
+                                    <div className="d-flex align-items-center flex-md-row flex-sm-column flex-column">
+                                        <div className={home.numberItem}>
+                                            <h2>03</h2>
+                                        </div>
+                                        <div className={home.contentSub}>
+                                            <h3>Learn More</h3>
+                                            <p>
+                                                Learn more about how our BPO solutions can help you enhance your business.
+                                                Please click on button below to get more information.
+                                            </p>
+                                            <button className={home.btnapply} type="button">
+                                                <NavLink to='/Solutions'>Learn More</NavLink>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
