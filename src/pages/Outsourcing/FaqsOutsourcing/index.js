@@ -43,7 +43,7 @@ const Faqs = () => {
                                     <div className={faqsStyle.question}>
                                         <div className="row">
                                             <div className="col-md-12 d-flex">
-                                                <div className={outsourcingStyle.contOurS}>
+                                                <div className={faqsStyle.contFaqs}>
                                                     <i><FontAwesomeIcon icon={faCircleQuestion} /></i>
                                                     <p>{aqItem.question}</p>
                                                 </div>
@@ -53,7 +53,7 @@ const Faqs = () => {
                                     <div className={faqsStyle.answer}>
                                         <div className="row">
                                             <div className="col-md-12 d-flex">
-                                                <div className={outsourcingStyle.contOurS}>
+                                                <div className={faqsStyle.contFaqs}>
                                                 <i><FontAwesomeIcon icon={faCommentDots} /></i>
                                                     <p>{aqItem.answer}</p>
                                                 </div>

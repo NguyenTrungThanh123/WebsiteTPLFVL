@@ -13,21 +13,24 @@ const AboutUsNav = () => {
         { to: 'OurCustomers', name: 'Our Customers', icon: faUsersLine }]
     return (
         <>
-            <div className={aboutusnavb.contentAbU}>
+            <nav className={`${aboutusnavb.navContent} ${"navbar navbar-expand-lg bg-light sticky-top"}`}>
                 <div className="container-fluid">
-                    <div className={aboutusnavb.subContent}>
-                        <div className="col-md-12 d-flex justify-content-center align-items-center">
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div class={`${aboutusnavb.subContent} ${"collapse navbar-collapse"}`} id="navbarScroll">
+                        <ul class="navbar-nav mx-auto navbar-nav-scroll">
                             {
                                 navlist.map((navItem, index) => {
                                     return (
-                                        <div className="col-md-2" key={index}><NavLink to={navItem.to}><FontAwesomeIcon icon={navItem.icon} /> {navItem.name}</NavLink></div>
+                                        <li className="px-5" key={index}><NavLink to={navItem.to}><FontAwesomeIcon icon={navItem.icon} /> {navItem.name}</NavLink></li>
                                     )
                                 })
                             }
-                        </div>
+                        </ul>
                     </div>
                 </div>
-            </div>
+            </nav>
         </>
     )
 }

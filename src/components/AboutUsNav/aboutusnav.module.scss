@@ -1,23 +1,21 @@
 @import '../../index.scss';
 
-.contentAbU {
-    width: 100%;
-    position: fixed;
-    z-index: 1000;
-    .subContent {
-        background-color: #E7E9EB;
-        padding: 15px 0;
-        text-align: center;
-        a {
-            text-decoration: none;
-            font-size: 1.05rem;
-            font-weight: 650;
-            color: #858282;
-        }
-        a:focus, a:active, a:hover{
-            background: $colorPrimary;
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-        }
+.subContent {
+    padding: 15px 0;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        font-size: 1.05rem;
+        font-weight: 650;
+        color: #858282;
+    }
+
+    a:focus,
+    a:active,
+    a:hover {
+        background: $colorPrimary;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
     }
 }
