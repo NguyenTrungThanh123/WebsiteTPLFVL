@@ -51,7 +51,7 @@ const OutsourcingRoutes = [
 ]
 
 const SolutionRoutes = [
-    {path: '/', component: OutsourcingPage, },
+    {path: '/', component: SolutionPage, },
     {path: '/Solutions', component: SolutionPage, },
     {path: '/Advantage', component: AdvantageSolution, },
     {path: '/Portfolio', component:Portfolio, },
