@@ -1,8 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import fvlLogo from '../../Image/Home/FVL_Logo.png';
-import tplLogo from '../../Image/Home/TPL_Logo.png';
 import sbOurS from './SidebarOutsourcing.module.scss';
+import outsourcingImage from "../../Image/Outsourcing/outsourcing.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileCirclePlus, faUsersGear, faCircleQuestion, faLightbulb, faAddressCard } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom';
@@ -20,8 +19,7 @@ const sidebar = () => {
         <>
             <div className={sbOurS.navOurS}>
                 <div className={sbOurS.oursImg}>
-                    <img src={fvlLogo} />
-                    <img src={tplLogo} />
+                    <img src={outsourcingImage} alt='outsourcingImage' />
                 </div>
                 <div className={sbOurS.oursLink}>
                     {

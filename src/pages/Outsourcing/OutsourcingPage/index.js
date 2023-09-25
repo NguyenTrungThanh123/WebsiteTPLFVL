@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import home from '../../Home/home.module.scss';
-import outsourcingImage from "../../../Image/Outsourcing/outsourcing.jpg"
+
 import outsourcingImagebt from "../../../Image/Outsourcing/arrow.jpg"
 import outsourcingStyle from './outsourcing.module.scss'
 const OutsourcingPage = () => {
@@ -34,12 +34,8 @@ const OutsourcingPage = () => {
             </div>
             <div className="col-lg-12">
                 <div className="row">
-                    <div className="col-lg-6">
-                        <div className={home.bannerBPO}>
-                            <img className="d-flex align-items-center justify-content-center" src={outsourcingImage} alt='Outsourcing' />
-                        </div>
-                    </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-2"></div>
+                    <div className="col-lg-8">
                         <div className={home.contentdetail}>
                             <div className="d-flex align-items-center flex-md-row flex-sm-column flex-column">
                                 <div className={home.numberItem}>

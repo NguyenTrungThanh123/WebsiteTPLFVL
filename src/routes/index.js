@@ -1,7 +1,7 @@
 import WorkFromHome from "../pages/WorkFromHome";
 import Home from "../pages/Home";
 import AboutUsNav from "../components/Navigation/AboutUsNavigation";
-// import Careers from "../pages/Careers";
+import Careers from "../pages/Careers";
 import Contact from "../pages/Contact";
 import News from "../pages/News";
 import OutsourcingNavigation from "../components/Navigation/OutsourcingNavigation";
@@ -30,7 +30,7 @@ const  publicRoutes = [
     {path: '/Solutions/*', component: SolutionNavigation},
     {path: '/WorkFromHome', component: WorkFromHome},
     {path: '/News', component: News},
-    // {path: '/Careers', component: Careers},
+    {path: '/Careers', component: Careers},
     {path: '/Contact', component: Contact},    
     {path: '/PrivacyPolice', component: PrivacyPolice, },
 ];
