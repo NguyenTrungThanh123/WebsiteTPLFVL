@@ -1,0 +1,26 @@
+@import '../../../index.scss';
+
+.answer {
+    i {
+        float: right;
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+
+    p {
+        text-align: end;
+    }
+
+}
+
+.question {
+    i {
+        float: left;
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+
+    p {
+        text-align: start;
+    }
+}
