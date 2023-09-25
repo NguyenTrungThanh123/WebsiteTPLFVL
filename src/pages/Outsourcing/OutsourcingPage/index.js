@@ -30,46 +30,48 @@ const OutsourcingPage = () => {
     return (
         <>
             <div className={`${outsourcingStyle.title} ${home.titleContent}`}>
-                <h2>Your Business Can Do More</h2>
+                <h2>OUTSOURCING</h2>
             </div>
-            <div className="col-lg-12">
-                <div className="row">
-                    <div className="col-lg-2"></div>
-                    <div className="col-lg-8">
-                        <div className={home.contentdetail}>
-                            <div className="d-flex align-items-center flex-md-row flex-sm-column flex-column">
-                                <div className={home.numberItem}>
-                                    <h2>01</h2>
-                                </div>
-                                <div className={home.contentSub}>
-                                    <p>
-                                        Your business has many pressures. Staff recruitment and retention, costs related to labor and operations, and increasing administrative tasks that need to get done. With all this attention on the day-to-day, your capacity to focus on what's most important is limited.
-                                    </p>
-                                </div>
+            <div className="row">
+                <div className="col-md-4">
+                    <div className={`${outsourcingStyle.title} ${home.titleContent}`}>
+                        <h2>Your Business Can Do More</h2>
+                    </div>
+                </div>
+                <div className="col-md-8">
+                    <div className={`${outsourcingStyle.contOurS}`}>
+                        <div className="d-flex align-items-center">
+                            <div className={home.numberItem}>
+                                <h2>01</h2>
+                            </div>
+                            <div className={home.contentSub}>
+                                <p>
+                                    Your business has many pressures. Staff recruitment and retention, costs related to labor and operations, and increasing administrative tasks that need to get done. With all this attention on the day-to-day, your capacity to focus on what's most important is limited.
+                                </p>
                             </div>
                         </div>
-                        <div className={home.contentdetail}>
-                            <div className="d-flex align-items-center flex-md-row flex-sm-column flex-column">
-                                <div className={home.numberItem}>
-                                    <h2>02</h2>
-                                </div>
-                                <div className={home.contentSub}>
-                                    <p>
-                                        Instead, outsource your business processes to FVL & TPL. Unload management burden and reduce costs with a dedicated team that we manage for you. Improve productivity through our expertise and economies of scale. Most importantly, drive your business forward by concentrating on what's really critical - increasing your customer base, sales revenues, and profit margins.
-                                    </p>
-                                </div>
+                    </div>
+                    <div className={`${outsourcingStyle.contOurS}`}>
+                        <div className="d-flex align-items-center">
+                            <div className={home.numberItem}>
+                                <h2>02</h2>
+                            </div>
+                            <div className={home.contentSub}>
+                                <p>
+                                    Instead, outsource your business processes to FVL & TPL. Unload management burden and reduce costs with a dedicated team that we manage for you. Improve productivity through our expertise and economies of scale. Most importantly, drive your business forward by concentrating on what's really critical - increasing your customer base, sales revenues, and profit margins.
+                                </p>
                             </div>
                         </div>
-                        <div className={home.contentdetail}>
-                            <div className="d-flex align-items-center flex-md-row flex-sm-column flex-column">
-                                <div className={home.numberItem}>
-                                    <h2>03</h2>
-                                </div>
-                                <div className={home.contentSub}>
-                                    <p>
-                                        How? Take a look at this process chart to understand how outsourcing can relieve your business pressures and allow you to achieve your maximum business objectives.
-                                    </p>
-                                </div>
+                    </div>
+                    <div className={`${outsourcingStyle.contOurS}`}>
+                        <div className="d-flex align-items-center">
+                            <div className={home.numberItem}>
+                                <h2>03</h2>
+                            </div>
+                            <div className={home.contentSub}>
+                                <p>
+                                    How? Take a look at this process chart to understand how outsourcing can relieve your business pressures and allow you to achieve your maximum business objectives.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -82,13 +84,13 @@ const OutsourcingPage = () => {
                             functionList.map((functionItem, index) => {
                                 return (
                                     <div className="col-lg-4 d-flex" key={index}>
+                                        <img src={outsourcingImagebt} alt='Outsourcingbt' />
                                         <div className={outsourcingStyle.contbottom}>
                                             <h6 className={home.titleContent}>{functionItem.title}</h6>
                                             <p>{functionItem.paragraph1}</p>
                                             <p>{functionItem.paragraph2}</p>
                                             <p>{functionItem.paragraph3}</p>
                                         </div>
-                                        <img src={outsourcingImagebt} alt='Outsourcingbt' />
                                     </div>
                                 )
                             })

@@ -1,0 +1,12 @@
+.contOurS {
+    border-radius: 40px;
+    border: 1.5px solid #acacac;
+    margin: 10px 0 20px 0;
+    padding: 10px;
+    transition: transform .2s;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contOurS:hover {
+    transform: scale(1.05);
+}
