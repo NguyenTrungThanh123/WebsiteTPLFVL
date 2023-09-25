@@ -84,7 +84,7 @@ const OutsourcingPage = () => {
                             functionList.map((functionItem, index) => {
                                 return (
                                     <div className="col-lg-4 d-flex" key={index}>
-                                        <img src={outsourcingImagebt} alt='Outsourcingbt' />
+                                    {index > 0 && <img src={outsourcingImagebt} alt='Outsourcingbt' />}
                                         <div className={outsourcingStyle.contbottom}>
                                             <h6 className={home.titleContent}>{functionItem.title}</h6>
                                             <p>{functionItem.paragraph1}</p>
