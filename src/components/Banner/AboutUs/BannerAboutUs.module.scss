@@ -1,6 +1,8 @@
-.bnAbU {
-    img {
-        width: 100%;
-        height: auto;
-    }
+$bannerAboutUs : url('../../../Image/AboutUs/Banner/FVL-Office.jpg');
+.backgroundImage{
+    background-image: $bannerAboutUs;
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

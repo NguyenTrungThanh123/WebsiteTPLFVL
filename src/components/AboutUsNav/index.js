@@ -18,13 +18,15 @@ const AboutUsNav = () => {
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class={`${aboutusnavb.subContent} ${"collapse navbar-collapse"}`} id="navbarScroll">
-                        <ul class="navbar-nav mx-auto navbar-nav-scroll">
+                    <div className={`${aboutusnavb.subContent} ${"collapse navbar-collapse"}`} id="navbarScroll">
+                        <ul className="navbar-nav mx-auto navbar-nav-scroll">
                             {
                                 navlist.map((navItem, index) => {
                                     return (
-                                        <li className="px-5" key={index}><NavLink to={navItem.to} style={({ isActive }) => ({ 
-                                            color: isActive ? 'green' : `${aboutusnavb.defaultColor}` })}><FontAwesomeIcon icon={navItem.icon} /> {navItem.name}</NavLink></li>
+                                        <div key={index}> <li className="px-5" ><NavLink to={navItem.to}  
+                                        className={({ isActive}) => isActive ? `${aboutusnavb.active}` : ""}>
+                                        <FontAwesomeIcon icon={navItem.icon} /> {navItem.name}</NavLink></li>
+                                        </div>
                                     )
                                 })
                             }

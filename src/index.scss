@@ -1,1 +1,8 @@
 $colorPrimary: linear-gradient(66.75deg, #00a5cf 0.87%, #d12bec 100%);
+
+@mixin colorPrimaryText{
+    background: linear-gradient(66.75deg, #00a5cf 0.87%, #d12bec 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+

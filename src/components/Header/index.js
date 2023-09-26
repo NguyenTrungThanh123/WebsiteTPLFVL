@@ -57,7 +57,7 @@ const MainLayout = () => {
               {navbarList.map((navbarItem, index) => {
                 return (
                   <li className="nav-item" key={index}>
-                    <NavLink to={navbarItem.to} className={`${header.active} ${"nav-link active"}`}> {/* Thêm lớp CSS noUnderline */}
+                    <NavLink to={navbarItem.to} className={({isActive}) => isActive ? `${header.active} ${"nav-link"}` : `${"nav-link"}`}> {/* Thêm lớp CSS noUnderline */}
                       {navbarItem.name}
                     </NavLink>
                   </li>

@@ -22,15 +22,11 @@
         }
 
         a:hover {
-            background: $colorPrimary;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            @include colorPrimaryText;
         }
 
         a:focus {
-            background: $colorPrimary;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            @include colorPrimaryText;
         }
     }
 }

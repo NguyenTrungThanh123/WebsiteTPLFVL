@@ -24,12 +24,10 @@
         font-weight: 650;
         color: #858282;
 
-    a:focus, a:hover{
-        background: $colorPrimary;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
+    a:hover{
+        @include colorPrimaryText;
     }
-    .active{
-        color: #858282 !important;
-    }
+}
+.active{
+   @include colorPrimaryText;
 }

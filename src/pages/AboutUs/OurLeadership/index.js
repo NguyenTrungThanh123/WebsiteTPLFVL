@@ -32,7 +32,7 @@ const OurLeadership = () => {
                             {
                                 leadershipList.map((leadershipListItem, index) => {
                                     return (
-                                        <>
+                                        <div key={index}>
                                             {
                                                 index === 0 &&
                                                 <div className={`${LeadershipStyle.ceo} ${"col-md-4"}`}>
@@ -41,7 +41,7 @@ const OurLeadership = () => {
                                                     <p className={LeadershipStyle.jobTitle}>{leadershipListItem.jobTitle}</p>
                                                 </div>
                                             }
-                                        </>
+                                        </div>
                                     )
                                 })
                             }

@@ -16,9 +16,7 @@
     }
 
     a:hover {
-        background: $colorPrimary;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        @include colorPrimaryText;
     }
 }
 
@@ -32,9 +30,7 @@
     }
 
     a:hover {
-        background: $colorPrimary;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        @include colorPrimaryText;
     }
 }
 
@@ -62,9 +58,7 @@
     }
 
     a:hover {
-        background: $colorPrimary;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        @include colorPrimaryText;
     }
 }
 

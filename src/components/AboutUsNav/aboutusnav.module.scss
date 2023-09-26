@@ -11,12 +11,8 @@
         color: #858282;
     }
 
-    a:focus,
-    a:active,
     a:hover {
-        background: $colorPrimary;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
+        @include colorPrimaryText;
     }
 }
 .tabs{
@@ -24,13 +20,8 @@
 	position: sticky;
 	position: -webkit-sticky;
 	top:57px;
-	z-index: 1;
+	z-index: 2;
 }
-.primaryColor{
-    background: $colorPrimary;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-.defaultColor{
-    color: black;
+.active {
+    @include colorPrimaryText;
 }
