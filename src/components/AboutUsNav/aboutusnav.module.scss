@@ -19,3 +19,18 @@
         -webkit-background-clip: text;
     }
 }
+.tabs{
+    display: flex;
+	position: sticky;
+	position: -webkit-sticky;
+	top:57px;
+	z-index: 1;
+}
+.primaryColor{
+    background: $colorPrimary;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.defaultColor{
+    color: black;
+}

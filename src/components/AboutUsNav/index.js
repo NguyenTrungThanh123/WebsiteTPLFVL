@@ -13,7 +13,7 @@ const AboutUsNav = () => {
         { to: 'OurCustomers', name: 'Our Customers', icon: faUsersLine }]
     return (
         <>
-            <nav className={`${aboutusnavb.navContent} ${"navbar navbar-expand-lg bg-light sticky-top"}`}>
+            <nav className={`${aboutusnavb.navContent} ${aboutusnavb.tabs} ${"navbar navbar-expand-lg bg-light"}`}>
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -23,7 +23,8 @@ const AboutUsNav = () => {
                             {
                                 navlist.map((navItem, index) => {
                                     return (
-                                        <li className="px-5" key={index}><NavLink to={navItem.to}><FontAwesomeIcon icon={navItem.icon} /> {navItem.name}</NavLink></li>
+                                        <li className="px-5" key={index}><NavLink to={navItem.to} style={({ isActive }) => ({ 
+                                            color: isActive ? 'green' : `${aboutusnavb.defaultColor}` })}><FontAwesomeIcon icon={navItem.icon} /> {navItem.name}</NavLink></li>
                                     )
                                 })
                             }
