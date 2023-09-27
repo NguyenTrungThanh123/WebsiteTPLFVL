@@ -1,3 +1,6 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import home from '../../../pages/Home/home.module.scss'
 import SidebarSolution from "../../SidebarSolution";
 import { Outlet } from "react-router-dom";
 
@@ -6,8 +9,22 @@ import { Outlet } from "react-router-dom";
 const SolutionLayout = () => {
     return (
         <>
-                <Outlet />
-                <SidebarSolution />
+        <div className={home.content}>
+                <div className='container-fluid'>
+                    <div className="col-lg-12">
+                        <div className="row">
+                            <div className="col-lg-9">
+                                <div className="container">
+                                <Outlet />
+                                </div>
+                            </div>
+                            <div className="col-lg-3">
+                            <SidebarSolution />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div >
         </>
     )
 

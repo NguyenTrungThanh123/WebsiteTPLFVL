@@ -1,10 +1,13 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import sbOurS from '../SidebarOutsourcing/SidebarOutsourcing.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightDots,faLightbulb, faBars,faStamp, faBook} from '@fortawesome/free-solid-svg-icons'
 import solutionImage from  "../../Image/Solution/solution-vector-colored-banner_104589-69.jpg"
 import { NavLink } from 'react-router-dom';
 const sidebarSolution = () => {
     const navlist = [
-        {to: 'Solutions',  name: 'Solutions', icon: faLightbulb },
+        {to: '',  name: 'Solutions', icon: faLightbulb },
         {to: 'Advantage',  name: 'The FVL & TPL Advantage', icon: faArrowUpRightDots },
         {to: 'Portfolio',  name: 'Portfolio',icon : faBars },
         {to: 'Testimonials',  name: 'Testimonials', icon: faStamp},
@@ -13,22 +16,29 @@ const sidebarSolution = () => {
     ]
     return (
         <>
-            <img src={solutionImage} alt='Solution' />
-            <ul>
-                {
-                   navlist.map((navItem, index) => {
-                        return (
-                            <li key={index}>
-                                <NavLink to={navItem.to} ><FontAwesomeIcon icon={navItem.icon} />{navItem.name}</NavLink>
-                            </li>
-                        )
-                   }) 
-                }
-            </ul>
-            <div>
-                <div>info@transcendpeople.com</div>
-                <div>+1 (650) 472 2233 (USA)</div>
-                <div>+ (84) 28 3948 4086 (Vietnam)</div>
+            
+            <div className={sbOurS.navOurS}>
+                <div className={sbOurS.oursImg}>
+                <img src={solutionImage} alt='Solution' />
+                </div>
+                <div className={sbOurS.oursLink}>
+                    {
+                        navlist.map((navItem, index) => {
+                            return (
+                                <div className="col-lg-12">
+                                    <div className="row" key={index}>
+                                        <div className="col-lg-1">
+                                            <FontAwesomeIcon icon={navItem.icon} />
+                                        </div>
+                                        <div className="col-lg-11">
+                                            <NavLink to={navItem.to} >{navItem.name}</NavLink>
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
             </div>
         </>
     )
