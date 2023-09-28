@@ -20,7 +20,7 @@ const OclockBanner = () => {
                                
                                         <div className="col-lg-3" key={index}>
                                             <Oclock utcOffset={oclockItem.timezone} />
-                                            <h4 style={{textAlign: "center"}}>{oclockItem.nameCity}</h4>
+                                            <h4 style={{textAlign: "center", color: 'white'}}>{oclockItem.nameCity}</h4>
                                         </div>
                             )  
                         })
