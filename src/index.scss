@@ -6,3 +6,13 @@ $colorPrimary: linear-gradient(66.75deg, #00a5cf 0.87%, #d12bec 100%);
     -webkit-background-clip: text;
 }
 
+
+@mixin bannerDefault ($image){
+    background-image: $image;
+    width: 100%;
+    height: 529px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
