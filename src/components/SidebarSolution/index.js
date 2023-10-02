@@ -10,7 +10,6 @@ const sidebarSolution = () => {
         {to: '',  name: 'Solutions', icon: faLightbulb },
         {to: 'Advantage',  name: 'The FVL & TPL Advantage', icon: faArrowUpRightDots },
         {to: 'Portfolio',  name: 'Portfolio',icon : faBars },
-        {to: 'Testimonials',  name: 'Testimonials', icon: faStamp},
         {to: 'CaseStudies',  name: 'Case Studies', icon: faLightbulb},
         {to: '/contact', name: 'Contact', icon: faBook}
     ]

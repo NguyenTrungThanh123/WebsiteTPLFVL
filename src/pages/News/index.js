@@ -1,4 +1,8 @@
-import {contentEvents} from '../../components/News'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import home from '../Home/home.module.scss';
+import news from './news.module.scss';
+import { contentEvents } from '../../components/News'
 import { useState } from 'react';
 import ReactPaginate from 'react-paginate';
 
@@ -15,36 +19,42 @@ const News = () => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth', // Tạo hiệu ứng cuộn mượt
-          });
-      };
-    return ( 
+        });
+    };
+    return (
         <>
-            {
-                currentData.map((contentItem, index) => {
-                    return (
-                        <div key={index} >
-                            <a href={contentItem.link} target="_blank" rel="noopener noreferrer">
-                                <img src={contentItem.urlImage} alt={contentItem.alt}/>
-                                <div>{contentItem.title}</div>
-                                <div>{contentItem.content}</div>
-                                
-                            </a>
-                        </div>
-                    )
-                })
-            }
-            <ReactPaginate
-                breakLabel="..."
-                nextLabel="next >"
-                onPageChange={handlePageClick}
-                pageRangeDisplayed={5}
-                pageCount={pageCount}
-                previousLabel="< previous"
-                renderOnZeroPageCount={null}
-            />
-
+            <div className={home.content}>
+                <div className={`${"container"} ${news.newContent}`}>
+                    <div className="row d-flex">
+                        {
+                            currentData.map((contentItem, index) => {
+                                return (
+                                    <div className={`${"col-lg-4 col-sm-6"}`} key={index} >
+                                        <a href={contentItem.link} target="_blank" rel="noopener noreferrer">
+                                            <div className={news.newItem}>
+                                                <img src={contentItem.urlImage} alt={contentItem.alt} />
+                                                <a>{contentItem.title}</a>
+                                                <p>{contentItem.content}</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                )
+                            })
+                        }
+                        <ReactPaginate
+                            breakLabel="..."
+                            nextLabel="next >"
+                            onPageChange={handlePageClick}
+                            pageRangeDisplayed={5}
+                            pageCount={pageCount}
+                            previousLabel="< previous"
+                            renderOnZeroPageCount={null}
+                        />
+                    </div>
+                </div>
+            </div>
         </>
-     );
+    );
 }
 
 export default News;

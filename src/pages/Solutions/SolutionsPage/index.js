@@ -46,31 +46,33 @@ const SolutionPage = () => {
                     </p>
                 </div>
             </div>
-            <div className="d-flex">
-                {
-                    serviceList.map((serviceItem, index) => {
-                        return (
-                            <div className={`${SolutionsStyle.contSolut}`}>
-                                <div className="px-5" key={index}>
-                                    <div className={SolutionsStyle.iconSolut}>
-                                        <FontAwesomeIcon icon={serviceItem.icon} />
-                                    </div>
-                                    <div className={home.contentSub}>
-                                        {
-                                            serviceItem.content.map((subcontent, subindex) => {
-                                                return (
-                                                    <div key={subindex}>
-                                                        {subcontent}
-                                                    </div>
-                                                )
-                                            })
-                                        }
+            <div className="container">
+                <div className="row">
+                    {
+                        serviceList.map((serviceItem, index) => {
+                            return (
+                                <div className={`${"col-lg-4 col-sm-6"}`} key={index}>
+                                    <div className={`${"px-5"} ${SolutionsStyle.contSolut}`}>
+                                        <div className={SolutionsStyle.iconSolut}>
+                                            <FontAwesomeIcon icon={serviceItem.icon} />
+                                        </div>
+                                        <div className={home.contentSub}>
+                                            {
+                                                serviceItem.content.map((subcontent, subindex) => {
+                                                    return (
+                                                        <p key={subindex}>
+                                                            {subcontent}
+                                                        </p>
+                                                    )
+                                                })
+                                            }
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        )
-                    })
-                }
+                            )
+                        })
+                    }
+                </div>
             </div>
             <div className={`${SolutionsStyle.title} ${home.titleContent}`}>
                 <h2>Our Process</h2>
