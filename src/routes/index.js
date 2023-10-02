@@ -21,14 +21,6 @@ import AdvantageSolution from "../pages/Solutions/AdvantageSolution";
 import CaseStudies from "../pages/Solutions/CaseStudies";
 import Portfolio from "../pages/Solutions/Portfolio";
 import Testimonials from "../pages/Solutions/Testimonials";
-import AboutUsBanner from "../components/Banner/AboutUsBanner";
-import OutsourcingBanner from "../components/Banner/OutsourcingBanner";
-import SolutionBanner from "../components/Banner/SolutionBanner";
-import WorkFromHomeBanner from "../components/Banner/WorkFromHomeBanner";
-import NewsBanner from "../components/Banner/NewsBanner";
-import CareerBanner from "../components/Banner/CareerBanner";
-import ContactBanner from "../components/Banner/ContactBanner";
-import HomeBanner from "../components/Banner/HomeBanner";
 
 const  publicRoutes = [
     {path: '/', component: Home},
@@ -66,22 +58,11 @@ const SolutionRoutes = [
     {path: '/Testimonials', component: Testimonials, }, 
     {path: '/CaseStudies', component: CaseStudies, },
 ]
-const bannerRoutes = [
-    {path: '/', component: HomeBanner},
-    {path: '/Home', component: HomeBanner},
-    {path: '/AboutUs/*', component: AboutUsBanner},
-    {path: '/Outsourcing/*', component: OutsourcingBanner},
-    {path: '/Solutions/*', component: SolutionBanner},
-    {path: '/WorkFromHome', component: WorkFromHomeBanner},
-    {path: '/News', component: NewsBanner},
-    {path: '/Careers', component: CareerBanner},
-    {path: '/Contact', component: ContactBanner},    
-    {path: '/PrivacyPolice', component: PrivacyPolice, },
-]
+
 const  privateRoutes = [
 
 ];
 
-export  {publicRoutes, privateRoutes,AboutUsRoutes, OutsourcingRoutes,SolutionRoutes,bannerRoutes} 
+export  {publicRoutes, privateRoutes,AboutUsRoutes, OutsourcingRoutes,SolutionRoutes} 
 
 

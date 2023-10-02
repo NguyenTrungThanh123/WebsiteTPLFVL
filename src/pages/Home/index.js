@@ -11,6 +11,7 @@ const Home = () => {
     return (
         <>
             <div className={home.content}>
+                <HomeBanner />
                 <div className='container-fluid'>
                     <div className="col-lg-12">
                         <div className='row'>
