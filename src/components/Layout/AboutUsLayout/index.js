@@ -6,8 +6,9 @@ import BannerAboutUs from "../../Banner/AboutUsBanner";
 const AboutUsLayout = () => {
     return (
         <>
-        <AboutUsNav />
-        <Outlet />
+            <BannerAboutUs />
+            <AboutUsNav />
+            <Outlet />
         </>
     )
 }
