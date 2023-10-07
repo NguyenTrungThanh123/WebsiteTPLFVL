@@ -1,0 +1,29 @@
+@import '../../index.scss';
+
+.detailCareer {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.modalDet {
+
+    h4,
+    h5 {
+        @include colorPrimaryText;
+    }
+
+    i {
+        font-size: 1rem;
+        margin-right: 5px;
+        svg {
+            path {
+                color: #646adc;
+            }
+        }
+    }
+    li{
+        margin-left: 10px;
+    }
+}
