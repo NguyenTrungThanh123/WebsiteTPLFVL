@@ -5,6 +5,18 @@
         width: 100%;
         height: auto;
     }
+    i {
+        font-size: 1rem;
+        margin-right: 5px;
+        svg {
+            path {
+                color: #646adc;
+            }
+        }
+    }
+    li{
+        margin-left: 10px;
+    }
 }
 
 .modalDet {

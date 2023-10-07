@@ -33,15 +33,21 @@ const Careers = () => {
                                                 {career.image}
                                             </div>
                                             <div className="col-lg-9">
-                                                <div>{career.jobName}</div>
-                                                <div>{career.iconCalendar}{career.datePublish}</div>
+                                                <h5>{career.jobName}</h5>
+                                                <div className="d-flex">
+                                                    <i>{career.iconCalendar}</i>
+                                                    <p>{career.datePublish}</p>
+                                                </div>
                                                 {
                                                     career.description.map((descItem, index) => {
                                                         return (
                                                             index === 0 && <div key={index} >
-                                                                <div>{career.icontitle}{descItem.title}</div>
+                                                                <div className="d-flex">
+                                                                    <i>{career.icontitle}</i>
+                                                                    <h6>{descItem.title}</h6>
+                                                                </div>
                                                                 {
-                                                                    descItem.content.map((contentItem, index) => <div key={index}>{career.iconContent}{contentItem}</div>)
+                                                                    descItem.content.map((contentItem, index) => <div key={index}><li>{contentItem}</li></div>)
                                                                 }
                                                             </div>
                                                         )
