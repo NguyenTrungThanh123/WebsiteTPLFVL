@@ -5,7 +5,6 @@ import { NavLink } from 'react-router-dom';
 import FAlogo from '../../Image/Home/FALogo.png';
 import AccessNurses from '../../Image/Home/AccessNurses.png'
 import bannerBPO from '../../Image/Home/BPO-service-Webdesign-1200x480-removebg.jpg'
-import OclockBanner from "../../components/Banner/OclockBanner";
 import HomeBanner from "../../components/Banner/HomeBanner";
 const Home = () => {
     return (

@@ -19,7 +19,7 @@ const SolutionLayout = () => {
                                 <Outlet />
                                 </div>
                             </div>
-                            <div className="col-lg-3">
+                            <div className="col-lg-3 bg-white">
                             <SidebarSolution />
                             </div>
                         </div>

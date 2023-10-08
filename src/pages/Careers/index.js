@@ -57,7 +57,7 @@ const Careers = () => {
                                                     <a href="https://forms.gle/61BoPx74zQTUhxRH6" target="_blank" rel="noopener noreferrer">Apply Now</a>
                                                 </button>
                                                 <button className={wfh.btnapply} type="button" onClick={() => openModal(index)}>
-                                                    <a href="" rel="noopener noreferrer">Job Detail</a>
+                                                    Job Detail
                                                 </button>
                                             </div>
                                         </div>
@@ -119,7 +119,7 @@ const Careers = () => {
                                 })
                             }
                             <button className={wfh.btnapply} type="button" onClick={closeModal}>
-                                <a>Close</a>
+                                Close
                             </button>
                             <button className={wfh.btnapply} type="button">
                                 <a href="https://forms.gle/61BoPx74zQTUhxRH6" target="_blank" rel="noopener noreferrer">Apply Now</a>
