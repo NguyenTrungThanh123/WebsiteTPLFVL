@@ -1,4 +1,4 @@
-$bannerHome : url('../../../Image/Banner/homepage6.jpg');
+$bannerHome : url('../../../Image/Banner/homeBanner.jpg');
 @import '../../../index.scss';
 .backgroundImage{
     @include bannerDefault($bannerHome)

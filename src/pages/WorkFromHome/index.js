@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import home from '../Home/home.module.scss';
 import wfh from '../WorkFromHome/WFH.module.scss';
+import WorkFromHomeBanner from '../../components/Banner/WorkFromHomeBanner'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck, faUserShield, faGraduationCap, faGlobe, faCreditCard, faCheck } from "@fortawesome/free-solid-svg-icons";
 import MerryChrismateZoomImg from "../../Image/WorkFromHome/MerryChrismateZoom2.jpg";
@@ -28,6 +29,7 @@ const WorkFromHome = () => {
     return (
         <>
             <div className={home.content}>
+                <WorkFromHomeBanner />
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-lg-6">
