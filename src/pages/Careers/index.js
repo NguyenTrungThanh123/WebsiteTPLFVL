@@ -49,6 +49,7 @@ const Careers = () => {
                                                                 {
                                                                     descItem.content.map((contentItem, index) => <div key={index}><li>{contentItem}</li></div>)
                                                                 }
+                                                                
                                                             </div>
                                                         )
                                                     })
