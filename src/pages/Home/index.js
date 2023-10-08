@@ -9,14 +9,14 @@ import HomeBanner from "../../components/Banner/HomeBanner";
 const Home = () => {
     return (
         <>
+            <HomeBanner />
             <div className={home.content}>
-                <HomeBanner />
                 <div className='container-fluid'>
                     <div className="col-lg-12">
                         <div className='row'>
                             <div className="col-lg-6">
                                 <div className={home.bannerBPO}>
-                                        <img className="align-items-center justify-content-center" src={bannerBPO} alt="BPO" />
+                                    <img className="align-items-center justify-content-center" src={bannerBPO} alt="BPO" />
                                 </div>
                             </div>
                             <div className="col-lg-6">
