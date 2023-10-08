@@ -7,6 +7,7 @@ import bannerStyle from './BannerAboutUs.module.scss'
 const BannerAboutUs = () => {
     return (
         <div className={bannerStyle.backgroundImage}>
+            About Us
         </div>
     )
 }

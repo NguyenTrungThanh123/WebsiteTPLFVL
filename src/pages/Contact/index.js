@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import home from '../Home/home.module.scss';
 import contact from '../Contact/contact.module.scss';
-
+import ContactBanner from '../../components/Banner/ContactBanner'
 import Iframe from "react-iframe";
 const Contact = () => {
     const contactList = [
@@ -21,6 +21,7 @@ const Contact = () => {
 
     return (
         <>
+            <ContactBanner />
             <div className={home.content}>
                 <div className="container-fluid">
                     <div className="row">

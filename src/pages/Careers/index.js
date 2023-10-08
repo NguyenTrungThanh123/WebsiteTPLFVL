@@ -6,7 +6,7 @@ import careerScss from '../Careers/careers.module.scss';
 import { useState } from 'react';
 import Modal from 'react-modal';
 import { CareersList } from '../../components/Careers';
-
+import CareerBanner from '../../components/Banner/CareerBanner';
 const Careers = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [modalID, setModalID] = useState(0);
@@ -20,6 +20,7 @@ const Careers = () => {
     }
     return (
         <>
+            <CareerBanner />
             <div className={home.content}>
                 <div className="container">
                     <div className={careerScss.detailCareer}>
