@@ -30,7 +30,6 @@ const Home = () => {
                                             <h2>01</h2>
                                         </div>
                                         <div className={home.contentSub}>
-                                            <h3>BPO Solutions</h3>
                                             <p>
                                                 Optimize your business performance with our customized business process outsourcing (BPO) solutions.
                                                 Reduce management burden, inefficiencies, and costs - and focus on taking your business to the next level.
@@ -45,7 +44,6 @@ const Home = () => {
                                             <h2>02</h2>
                                         </div>
                                         <div className={home.contentSub}>
-                                            <h3>First Virtue & Transcend People</h3>
                                             <p>
                                                 First Virtue & Transcend People offers your business a wide range of outsourcing solutions that will alleviate the ever-growing demands on your business, such as data entry services, e-commerce support, high-level document classification, pre-sales or market research outsourcing, and much more.
                                             </p>
@@ -58,7 +56,6 @@ const Home = () => {
                                             <h2>03</h2>
                                         </div>
                                         <div className={home.contentSub}>
-                                            <h3>Learn More</h3>
                                             <p>
                                                 Learn more about how our BPO solutions can help you enhance your business.
                                                 Please click on button below to get more information.

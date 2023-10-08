@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import backtotopStyle from './backtotop.module.scss'
 import { useState, useEffect } from 'react';
 const BackToTop = () => {
@@ -16,7 +16,7 @@ const BackToTop = () => {
 
     const handleScroll = () => {
         // Check the user's scroll position and decide whether to show the button.
-        if (window.pageYOffset > 300) {
+        if (window.pageYOffset > 100) {
           setIsVisible(true);
         } else {
           setIsVisible(false);
@@ -35,7 +35,7 @@ const BackToTop = () => {
           {
              IsVisible  && (
                 <button className={backtotopStyle.buttonStyle} onClick={scrollToTop}>
-                <FontAwesomeIcon icon={faCircleChevronUp} />
+                <FontAwesomeIcon icon={faChevronUp} />
             </button>
              )
           }
