@@ -45,14 +45,12 @@ const News = () => {
                         }
                         <ReactPaginate
                             breakLabel="..."
-                            nextLabel="next >"
+                            nextLabel=">"
                             onPageChange={handlePageClick}
                             pageRangeDisplayed={5}
                             pageCount={pageCount}
-                            previousLabel="< previous"
-                            renderOnZeroPageCount={null}
-                           
-                            
+                            previousLabel="<"
+                            renderOnZeroPageCount={null}                
                         />
                     </div>
                 </div>
