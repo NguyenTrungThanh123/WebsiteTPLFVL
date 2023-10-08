@@ -1,6 +1,11 @@
 @import '../../index.scss';
 
 .detailCareer {
+    border-radius: 40px;
+    border: 1.5px solid #acacac;
+    padding: 40px;
+    transition: transform .2s;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
     img {
         width: 100%;
         height: auto;
