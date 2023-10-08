@@ -206,14 +206,18 @@ $bgcolor: linear-gradient(264deg, #6549d50d -22%, #ffffff 73%, #fb534308 78%);
     margin: 0 20px 20px 0;
     position: relative;
     z-index: 1;
-    padding: 10px 10px 10px 0;
-
+    padding: 10px;
+    min-height: 275px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     p {
         margin-bottom: 0;
     }
     .imgClient{
         img{
-            width: 50%;
+            width: 100%;
             height: auto;
             text-align: center;
         }

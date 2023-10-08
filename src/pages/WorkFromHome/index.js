@@ -78,7 +78,8 @@ const WorkFromHome = () => {
                                 }
                             </div>
                             <div className={wfh.wfhContent}>
-                                <h5>APPLY YOUR CV TO OUR HR FOR A PROJECT SUITABLE FOR YOU</h5>
+                                <h5>APPLY YOUR CV TO OUR HR</h5>
+                                <h5>FOR A PROJECT SUITABLE FOR YOU</h5>
                                 <button className={wfh.btnapply} type="button">
                                     <a href="https://forms.gle/61BoPx74zQTUhxRH6" target="_blank" rel="noopener noreferrer">Apply Now</a>
                                 </button>
