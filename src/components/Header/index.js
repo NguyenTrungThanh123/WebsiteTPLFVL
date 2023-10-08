@@ -43,7 +43,7 @@ const MainLayout = () => {
   ];
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-light sticky-top">
+      <nav className="navbar navbar-expand-lg sticky-top">
         <div className="container-fluid" >
           <div className={header.logo}>
             <NavLink to='/'><img src={fvlLogo} alt="Logo FVL" className={header.logoFVL} /></NavLink>
