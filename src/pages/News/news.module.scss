@@ -50,6 +50,7 @@
             width: 100%;
             height: auto;
             max-height: 220px;
+            object-fit: contain
         }
 
         a {
@@ -72,4 +73,10 @@
     .newItem:hover {
         transform: scale(1.05);
     }
+
+}
+.title {
+    @include colorPrimaryText;
+    font-weight: 700;
+    text-transform: uppercase;
 }

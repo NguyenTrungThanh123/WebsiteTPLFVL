@@ -1,4 +1,4 @@
-$bannerAboutUs : url('../../../Image/Banner/FVL-Office1900x529.jpg');
+$bannerAboutUs : url('../../../Image/Banner/FVL-Office1900x345.jpg');
 @import '../../../index.scss';
 .backgroundImage{
     @include bannerDefault($bannerAboutUs)

@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import sbOurS from '../SidebarOutsourcing/SidebarOutsourcing.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUpRightDots,faLightbulb, faBars,faStamp, faBook} from '@fortawesome/free-solid-svg-icons'
+import { faArrowUpRightDots,faLightbulb, faBars, faBook} from '@fortawesome/free-solid-svg-icons'
 import solutionImage from  "../../Image/Solution/solution-vector-colored-banner_104589-69.jpg"
 import { NavLink } from 'react-router-dom';
 const sidebarSolution = () => {

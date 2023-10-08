@@ -7,7 +7,6 @@ import OclockBanner from '../OclockBanner';
 const HomeBanner = () => {
     return (
         <div className={bannerHomeStyle.backgroundImage}>
-            <OclockBanner />
         </div>
     )
 }

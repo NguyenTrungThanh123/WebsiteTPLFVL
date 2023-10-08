@@ -2,7 +2,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import home from '../Home/home.module.scss';
 import wfh from '../WorkFromHome/WFH.module.scss';
-import styles from './modal.css.js'
 import careerScss from '../Careers/careers.module.scss';
 import { useState } from 'react';
 import Modal from 'react-modal';
@@ -57,7 +56,7 @@ const Careers = () => {
                                                     <a href="https://forms.gle/61BoPx74zQTUhxRH6" target="_blank" rel="noopener noreferrer">Apply Now</a>
                                                 </button>
                                                 <button className={wfh.btnapply} type="button" onClick={() => openModal(index)}>
-                                                    <a>Job Detail</a>
+                                                    <a href="" rel="noopener noreferrer">Job Detail</a>
                                                 </button>
                                             </div>
                                         </div>
@@ -70,7 +69,14 @@ const Careers = () => {
                 <Modal isOpen={modalIsOpen}
                     onRequestClose={closeModal}
                     contentLabel='MOdal Example'
-                    style={styles.modal}
+                    style={
+                        {
+                            overlay: {
+                                zIndex: 1020,
+                            }
+                        }
+                    }
+                    
                 >
                     <div className="container">
                         <div className={careerScss.modalDet}>

@@ -5,6 +5,7 @@ import news from './news.module.scss';
 import { contentEvents } from '../../components/News'
 import { useState } from 'react';
 import ReactPaginate from 'react-paginate';
+import NewBanner from '../../components/Banner/NewsBanner'
 
 const News = () => {
 
@@ -23,6 +24,7 @@ const News = () => {
     };
     return (
         <>
+            <NewBanner />
             <div className={home.content}>
                 <div className={`${"container"} ${news.newContent}`}>
                     <div className="row d-flex">
@@ -33,7 +35,7 @@ const News = () => {
                                         <a href={contentItem.link} target="_blank" rel="noopener noreferrer">
                                             <div className={news.newItem}>
                                                 <img src={contentItem.urlImage} alt={contentItem.alt} />
-                                                <a>{contentItem.title}</a>
+                                                <div className={news.title}>{contentItem.title}</div>
                                                 <p>{contentItem.content}</p>
                                             </div>
                                         </a>
@@ -49,6 +51,8 @@ const News = () => {
                             pageCount={pageCount}
                             previousLabel="< previous"
                             renderOnZeroPageCount={null}
+                           
+                            
                         />
                     </div>
                 </div>
