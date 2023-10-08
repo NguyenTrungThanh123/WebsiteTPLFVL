@@ -1,13 +1,17 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import bannerStyle from './BannerAboutUs.module.scss'
+import bannerGeneral from '../banner.module.scss';
+import bannerStyle from './BannerAboutUs.module.scss';
 
 
 const BannerAboutUs = () => {
     return (
         <div className={bannerStyle.backgroundImage}>
-            About Us
+            <div className={bannerGeneral.titlePage}>
+                <h1>ABOUT US</h1>
+            </div>
+
         </div>
     )
 }
