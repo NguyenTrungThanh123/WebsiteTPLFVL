@@ -7,6 +7,7 @@ import bannerHomeStyle from './bannerHome.module.scss'
 const HomeBanner = () => {
     return (
         <div className={bannerHomeStyle.backgroundImage}>
+            <div className={bannerGeneral.overlay}></div>
             <div className={bannerGeneral.titlePage}>
                 <h1>CAREERS</h1>
             </div>
