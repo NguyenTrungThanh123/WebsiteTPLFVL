@@ -26,4 +26,9 @@
   .second-hand {
     background-color: red;
   }
+  h3 {
+    font-size: 35px;
+    font-weight: 900;
+    @include colorPrimaryText;
+}
   

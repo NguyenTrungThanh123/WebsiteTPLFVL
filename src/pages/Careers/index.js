@@ -23,11 +23,11 @@ const Careers = () => {
             <CareerBanner />
             <div className={home.content}>
                 <div className="container">
-                    <div className={careerScss.detailCareer}>
-                        {
-                            CareersList.map((career, index) => {
-                                return (
-                                    <>
+                    {
+                        CareersList.map((career, index) => {
+                            return (
+                                <>
+                                    <div className={careerScss.detailCareer}>
                                         <div className="row" key={index}>
                                             <div className="col-lg-3">
                                                 {career.image}
@@ -49,7 +49,7 @@ const Careers = () => {
                                                                 {
                                                                     descItem.content.map((contentItem, index) => <div key={index}><li>{contentItem}</li></div>)
                                                                 }
-                                                                
+
                                                             </div>
                                                         )
                                                     })
@@ -62,11 +62,12 @@ const Careers = () => {
                                                 </button>
                                             </div>
                                         </div>
-                                    </>
-                                )
-                            })
-                        }
-                    </div>
+                                    </div>
+                                </>
+                            )
+                        })
+                    }
+
                 </div>
                 <Modal isOpen={modalIsOpen}
                     onRequestClose={closeModal}
@@ -78,7 +79,7 @@ const Careers = () => {
                             }
                         }
                     }
-                    
+
                 >
                     <div className="container">
                         <div className={careerScss.modalDet}>

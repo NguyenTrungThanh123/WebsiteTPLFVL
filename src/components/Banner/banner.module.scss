@@ -1,21 +1,15 @@
 .titlePage {
-    background-color: white;
-    padding: 40px 60px;  /* Cân chỉnh theo mong muốn của bạn */
-    border-radius: 5px; /* Cân chỉnh theo mong muốn của bạn */
-    opacity: 0.8; 
-    position: relative;
+    opacity: 0.7;
     h1 {
-        opacity: 1;
+        padding: 40px;
+        background-color: white;
+        border-radius: 5px;
         font-size: 50px;
-        font-weight: 800; 
-        
+        font-weight: 1000; 
     }
 }
 .overlay{
-    width: 100%;
-    height: 100%;
     background-color: black;
-    opacity: 0.1;
+    opacity: 1;
     z-index: 1;  
-
 }

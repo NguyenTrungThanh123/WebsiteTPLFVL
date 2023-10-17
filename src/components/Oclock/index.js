@@ -123,10 +123,7 @@ const formatDate = { year: 'numeric', month: 'short', day: '2-digit' };
 return (
     <div className={styles['clock-container']}> {/* Use CSS Module class names */}
     <canvas ref={canvasRef} className={styles.clock}>
-        Your browser does not support the HTML5 canvas tag.
     </canvas>
-    <div className={styles.time}>{currentTime.toLocaleTimeString()}</div>
-    <div className={styles.date}>{currentDate.toLocaleDateString(undefined, formatDate)}</div>
     </div>
 );
 }

@@ -27,7 +27,7 @@ $bgcolor: linear-gradient(264deg, #fde8fbcc 10%, #ffffff 60%, #b5d5e49e 98%);
 .titleContent {
     @include colorPrimaryText;
     text-align: center;
-    padding: 30px;
+    margin: 10px;
 }
 
 .numberItem {
@@ -208,6 +208,7 @@ $bgcolor: linear-gradient(264deg, #fde8fbcc 10%, #ffffff 60%, #b5d5e49e 98%);
     z-index: 1;
     padding: 10px;
     min-height: 275px;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-left: auto;
