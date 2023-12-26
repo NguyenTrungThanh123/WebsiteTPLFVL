@@ -58,15 +58,15 @@ const OurCustomers = () => {
                                 <h3>Our clients have experienced the FVL & TPL advantage - and they've got a lot to share. Here's a sampling of testimonials from our clients:</h3>
                                 <img src={spotlight} alt="spotlight" />
                             </div>
-                            <div className={home.detailClient}>
-                                <div className="col-md-12">
-                                    {
-                                        OurCustomersSayList.map((item, index) => {
-                                            return (
-                                                <>
-                                                    <div className="col-md-6">
+                            <div className="row">
+                                {
+                                    OurCustomersSayList.map((item, index) => {
+                                        return (
+                                            <>
+                                                <div className="col-md-6">
+                                                    <div className={home.detailClient}>
                                                         <div className="row">
-                                                            <div className="col-md-12 d-flex">
+                                                            <div className="col-md-12 d-flex align-items-center">
                                                                 <div className="col-md-3 align-items-center">
                                                                     <div className={home.imgClient}>
                                                                         <img className="rounded mx-auto d-block" src={item.urlImage} alt={item.urlImage} />
@@ -84,13 +84,12 @@ const OurCustomers = () => {
                                                             </div>
                                                         </div>
                                                     </div>
-
-                                                </>
-                                            )
-                                        })
-                                    }
-                                </div>
-                            </div>
+                                                </div>
+                                            </>
+                                        )
+                                    })
+                                }
+                            </div >
                         </div>
                     </div>
                 </div>
