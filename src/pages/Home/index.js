@@ -11,18 +11,18 @@ const Home = () => {
         <>
             <HomeBanner />
             <div className={home.content}>
-                <div className='container-fluid'>
+                <div className='container'>
                     <div className="col-lg-12">
                         <div className='row'>
+                        <div className={home.titleContent}>
+                                    <h2>Business Process Outsourcing</h2>
+                                </div>
                             <div className="col-lg-6">
                                 <div className={home.bannerBPO}>
                                     <img className="align-items-center justify-content-center" src={bannerBPO} alt="BPO" />
                                 </div>
                             </div>
                             <div className="col-lg-6">
-                                <div className={home.titleContent}>
-                                    <h2>Business Process Outsourcing</h2>
-                                </div>
                                 <div className={home.contentdetail}>
                                     <div className="d-flex align-items-center flex-md-row flex-sm-column flex-column">
                                         <div className={home.numberItem}>
@@ -70,7 +70,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className={home.experience}>
-                    <div className="container-fluid text-center d-flex flex-column">
+                    <div className="container text-center d-flex flex-column">
                         <div className={home.titleContent}>
                             <h2>
                                 The First Virtue & Transcend People Advantage
@@ -83,7 +83,7 @@ const Home = () => {
                         <div className={home.btnapply}><NavLink to='/AboutUs/OurCompanies'>About Us</NavLink></div>
                     </div>
                 </div>
-                <div className="container-fluid">
+                <div className="container">
                     <div className={home.titleContent}>
                         <h2>
                             What Our Clients Say
@@ -109,7 +109,7 @@ const Home = () => {
                                                     <p>
                                                         Their continuous professionalism and high quality standards have prompted the inclusion of additional counties to their range of knowledge."
                                                     </p>
-                                                    <h5 className={home.author}>Cathy Bremer, DBS International Operations</h5>
+                                                    <h6 className={home.author}>Cathy Bremer, DBS International Operations</h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -130,7 +130,7 @@ const Home = () => {
                                                     <p>
                                                         "By utilizing First Virtue & Transcend People, we were able to scale portions of our business much faster than if we were to have attempted the support work on our own. The First Virtue & Transcend People team provides efficient, consistent, and high-quality work. No matter what project we have thrown at them, the deliverable has always met the highest standards and results were produced in an exceedingly timely manner."
                                                     </p>
-                                                    <h5 className={home.author}>Collin J. Tyler, Corporate Development Access Nurses, Inc.</h5>
+                                                    <h6 className={home.author}>Collin J. Tyler, Corporate Development Access Nurses, Inc.</h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -138,7 +138,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <button className={home.btnapply} type="button">
-                                <NavLink to='/Solutions'>Learn More</NavLink>
+                                <NavLink to='/AboutUs/OurCustomers'>Learn More</NavLink>
                             </button>
                         </div>
                     </div>

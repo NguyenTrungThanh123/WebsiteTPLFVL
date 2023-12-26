@@ -52,38 +52,45 @@ const OurCustomers = () => {
         <>
             <div className={home.content}>
                 <div className="container">
-                <div className="row">
-                    <div className={OurCustomersStyle.contCus}>
+                    <div className="row">
+                        <div className={OurCustomersStyle.contCus}>
                             <div className={home.titleContent}>
                                 <h3>Our clients have experienced the FVL & TPL advantage - and they've got a lot to share. Here's a sampling of testimonials from our clients:</h3>
                                 <img src={spotlight} alt="spotlight" />
                             </div>
-                            {
-                                OurCustomersSayList.map((item, index) => {
-                                    return (
-                                        <>
-                                            <div className={`${"row"} ${home.detailClient}`}>
-                                                <div className="col-md-12 d-flex">
-                                                    <div className="col-md-3 align-items-center">
-                                                        <div className={home.imgClient}>
-                                                            <img className="rounded mx-auto d-block" src={item.urlImage} alt={item.urlImage} />
+                            <div className={home.detailClient}>
+                                <div className="col-md-12">
+                                    {
+                                        OurCustomersSayList.map((item, index) => {
+                                            return (
+                                                <>
+                                                    <div className="col-md-6">
+                                                        <div className="row">
+                                                            <div className="col-md-12 d-flex">
+                                                                <div className="col-md-3 align-items-center">
+                                                                    <div className={home.imgClient}>
+                                                                        <img className="rounded mx-auto d-block" src={item.urlImage} alt={item.urlImage} />
+                                                                    </div>
+                                                                </div>
+
+                                                                <div className="col-md-9 align-items-center">
+                                                                    <div className={home.detailSay}>
+                                                                        <p>
+                                                                            <FontAwesomeIcon icon={faQuoteLeft} />{item.content}<FontAwesomeIcon icon={faQuoteRight} />
+                                                                        </p>
+                                                                        <h5 className={home.author}>{item.author}</h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
 
-                                                    <div className="col-md-9 align-items-center">
-                                                        <div className={home.detailSay}>
-                                                            <p>
-                                                                <FontAwesomeIcon icon={faQuoteLeft} />{item.content}<FontAwesomeIcon icon={faQuoteRight} />
-                                                            </p>
-                                                            <h5 className={home.author}>{item.author}</h5>
-                                                        </div>
-                                                    </div >
-                                                </div>
-                                            </div>
-                                        </>
-                                    )
-                                })
-                            }
+                                                </>
+                                            )
+                                        })
+                                    }
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

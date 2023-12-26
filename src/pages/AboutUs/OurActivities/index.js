@@ -75,11 +75,11 @@ const OurActivities = () => {
                                     }
                                 </div>
                                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                    <span className="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                                    <span className="carousel-control-prev-icon text-body" aria-hidden="true"></span>
                                     <span className="visually-hidden">Previous</span>
                                 </button>
                                 <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                    <span className="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                                    <span className="carousel-control-next-icon text-body" aria-hidden="true"></span>
                                     <span className="visually-hidden">Next</span>
                                 </button>
                             </div>

@@ -2,7 +2,6 @@
 $bgcolor: linear-gradient(264deg, #fde8fbcc 10%, #ffffff 60%, #b5d5e49e 98%);
 .content{
     background: $bgcolor;
-    padding: 10px 0 10px 0;
 }
 .bannerHome{
     img{
@@ -20,6 +19,7 @@ $bgcolor: linear-gradient(264deg, #fde8fbcc 10%, #ffffff 60%, #b5d5e49e 98%);
        
         margin: auto;
         border-radius: 10px;
+        width: 70%;
        
     }
 }
@@ -40,11 +40,12 @@ $bgcolor: linear-gradient(264deg, #fde8fbcc 10%, #ffffff 60%, #b5d5e49e 98%);
 
 .contentdetail {
     border-radius: 40px;
-    border: 1.5px solid #acacac;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
     margin: 0 0 20px 0;
     position: relative;
     z-index: 1;
     padding: 10px 10px 10px 0;
+    background-color: white;
 
     p {
         margin-bottom: 0;
@@ -190,19 +191,21 @@ $bgcolor: linear-gradient(264deg, #fde8fbcc 10%, #ffffff 60%, #b5d5e49e 98%);
 }
 .detailSay{
     padding: 10px;
-    h5{
+    h6{
         border-top: 2px solid #ff9901;
         margin: 10px;
         text-align: right;
+        font-size: 0.9rem;
     }
 }
 .clientSay{
     margin-bottom: 10px;
+    
 }
 
 .detailClient {
     border-radius: 40px;
-    border: 1.5px solid #acacac;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
     margin: 0 20px 20px 0;
     position: relative;
     z-index: 1;
@@ -213,6 +216,7 @@ $bgcolor: linear-gradient(264deg, #fde8fbcc 10%, #ffffff 60%, #b5d5e49e 98%);
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
     p {
         margin-bottom: 0;
     }

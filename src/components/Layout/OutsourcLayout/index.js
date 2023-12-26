@@ -16,7 +16,9 @@ const outsourcLayout = () => {
                     <div className="col-lg-12">
                         <div className="row">
                             <div className="col-lg-9">
-                                <Outlet />
+                                <div className="container">
+                                    <Outlet />
+                                </div>
                             </div>
                             <div className={`${osLayout.sideBarstyle} ${"col-lg-3 bg-white"}`}>
                                 <Sidebar />

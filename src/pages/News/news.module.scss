@@ -30,10 +30,10 @@
         padding: 20px;
         margin: 12px 0 12px 0;
         border-radius: 30px;
-        border: 1.5px solid #acacac;
-        height: 400px;
+        height: 430px;
         transition: transform .2s;
         box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+        background-color: white;
 
         img {
             width: 100%;
@@ -68,4 +68,6 @@
     @include colorPrimaryText;
     font-weight: 700;
     text-transform: uppercase;
+    padding: 10px 0px;
+    text-align: center;
 }
