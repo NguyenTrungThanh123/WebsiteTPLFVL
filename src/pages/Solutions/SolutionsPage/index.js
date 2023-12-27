@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import home from '../../Home/home.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping, faChartLine, faIdCard, faGlobe, faCalculator, faAnglesRight,faGears } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping, faChartLine, faIdCard, faGlobe, faCalculator, faAnglesRight, faGears } from '@fortawesome/free-solid-svg-icons'
 import SolutionsStyle from "./solutionStyle.module.scss"
 const SolutionPage = () => {
     const serviceList = [
@@ -44,69 +44,69 @@ const SolutionPage = () => {
                         Our commitment comes in the form of long-term partnerships built on trust, open communication and transparency, giving you a smooth and seamless transition from day one.
                     </p>
                 </div>
-            </div>
-            <div className="container">
-                <div className="row">
-                    {
-                        serviceList.map((serviceItem, index) => {
-                            return (
-                                <div className={`${"col"}`} key={index}>
-                                    <div className={`${"px-5"} ${SolutionsStyle.contSolut}`}>
-                                        <div className={SolutionsStyle.iconSolut}>
-                                            <FontAwesomeIcon icon={serviceItem.icon} />
-                                            
-                                        </div>
-                                        <h6 className={SolutionsStyle.contentTitle}>{serviceItem.title}</h6>
-                                        <div className={SolutionsStyle.contentSub}>
-                                            {
-                                                serviceItem.content.map((subcontent, subindex) => {
-                                                    return (
-                                                        <p key={subindex}>
-                                                            {subcontent}
-                                                        </p>
-                                                    )
-                                                })
-                                            }
-                                        </div>
-                                    </div>
-                                </div>
-                            )
-                        })
-                    }
-                </div>
-            </div>
-            <div className={`${SolutionsStyle.title} ${home.titleContent}`}>
-                <h2>Our Process</h2>
-            </div>
-            <div className={SolutionsStyle.content}>
-                <div className={SolutionsStyle.paragraph}>
-                    <p>
-                        From proposal to implementation to follow-up of your BPO project, we are committed to providing superior ease of integration and friendly and responsive customer service.
-                        Our managers will work closely with your team to ensure timely and accurate results are delivered each and every time.
-                    </p>
-                </div>
-                <div className="col-md-12">
+                <div className="container">
                     <div className="row">
                         {
-                            stepList.map((stepItem, index) => {
+                            serviceList.map((serviceItem, index) => {
                                 return (
-                                    <>
-                                         <div className="col-md-1 d-flex" key={index}>
-                                            <div className={SolutionsStyle.iconStep}>
-                                                
-                                                {index > 0  ? <FontAwesomeIcon icon={faAnglesRight} /> : <FontAwesomeIcon icon={faGears} />  }
+                                    <div className={`${"col"}`} key={index}>
+                                        <div className={`${"px-5"} ${SolutionsStyle.contSolut}`}>
+                                            <div className={SolutionsStyle.iconSolut}>
+                                                <FontAwesomeIcon icon={serviceItem.icon} />
+
+                                            </div>
+                                            <h6 className={SolutionsStyle.contentTitle}>{serviceItem.title}</h6>
+                                            <div className={SolutionsStyle.contentSub}>
+                                                {
+                                                    serviceItem.content.map((subcontent, subindex) => {
+                                                        return (
+                                                            <p key={subindex}>
+                                                                {subcontent}
+                                                            </p>
+                                                        )
+                                                    })
+                                                }
                                             </div>
                                         </div>
-                                        <div className={`col-md-3 d-flex ${SolutionsStyle.contStep}`} key={index}>
-                                            <div>
-                                                {stepItem.content.map((content, subindex) => <p key={subindex}> {subindex > 0 ? content : <h6>{content}</h6>}</p>)}
-                                            </div>
-                                        </div>
-                                        
-                                    </>
+                                    </div>
                                 )
                             })
                         }
+                    </div>
+                </div>
+                <div className={`${SolutionsStyle.title} ${home.titleContent}`}>
+                    <h2>Our Process</h2>
+                </div>
+                <div className={SolutionsStyle.content}>
+                    <div className={SolutionsStyle.paragraph}>
+                        <p>
+                            From proposal to implementation to follow-up of your BPO project, we are committed to providing superior ease of integration and friendly and responsive customer service.
+                            Our managers will work closely with your team to ensure timely and accurate results are delivered each and every time.
+                        </p>
+                    </div>
+                    <div className="col-md-12">
+                        <div className="row">
+                            {
+                                stepList.map((stepItem, index) => {
+                                    return (
+                                        <>
+                                            <div className="col-md-1 d-flex" key={index}>
+                                                <div className={SolutionsStyle.iconStep}>
+
+                                                    {index > 0 ? <FontAwesomeIcon icon={faAnglesRight} /> : <FontAwesomeIcon icon={faGears} />}
+                                                </div>
+                                            </div>
+                                            <div className={`col-md-3 d-flex ${SolutionsStyle.contStep}`} key={index}>
+                                                <div>
+                                                    {stepItem.content.map((content, subindex) => <p key={subindex}> {subindex > 0 ? content : <h6>{content}</h6>}</p>)}
+                                                </div>
+                                            </div>
+
+                                        </>
+                                    )
+                                })
+                            }
+                        </div>
                     </div>
                 </div>
             </div>
