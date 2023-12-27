@@ -4,7 +4,7 @@ import home from '../../../pages/Home/home.module.scss'
 import SidebarSolution from "../../SidebarSolution";
 import { Outlet } from "react-router-dom";
 import SolutionBanner from '../../../components/Banner/SolutionBanner'
-
+import osLayout from './../OutsourcLayout/OSLayout.module.scss'
 
 const SolutionLayout = () => {
     return (
@@ -14,12 +14,12 @@ const SolutionLayout = () => {
                 <div className='container-fluid'>
                     <div className="col-lg-12">
                         <div className="row">
-                            <div className="col-lg-9">
+                            <div className="col-lg-10">
                                 <div className="container">
                                 <Outlet />
                                 </div>
                             </div>
-                            <div className="col-lg-3 bg-white">
+                            <div className={`${osLayout.sideBarstyle} ${"col-lg-2"}`}>
                             <SidebarSolution />
                             </div>
                         </div>

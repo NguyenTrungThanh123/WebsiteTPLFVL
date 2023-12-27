@@ -27,11 +27,10 @@ const sidebar = () => {
                             return (
                                 <div className="col-lg-12">
                                     <div className="row" key={index}>
-                                        <div className="col-lg-1">
-                                            <FontAwesomeIcon icon={navItem.icon} />
-                                        </div>
-                                        <div className="col-lg-11">
-                                            <NavLink to={navItem.to} >{navItem.name}</NavLink>
+                                        <div className={sbOurS.sidebarlink}>
+                                            <div className="col">
+                                                <NavLink to={navItem.to}><FontAwesomeIcon icon={navItem.icon} className={sbOurS.sidebarIcon} /> {navItem.name}</NavLink>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

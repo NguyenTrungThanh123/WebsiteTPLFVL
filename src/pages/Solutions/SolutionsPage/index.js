@@ -1,9 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import home from '../../Home/home.module.scss';
-import outsourcingImagebt from "../../../Image/Outsourcing/arrow.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping, faChartLine, faIdCard, faGlobe, faCalculator } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping, faChartLine, faIdCard, faGlobe, faCalculator, faAnglesRight,faGears } from '@fortawesome/free-solid-svg-icons'
 import SolutionsStyle from "./solutionStyle.module.scss"
 const SolutionPage = () => {
     const serviceList = [
@@ -51,12 +50,14 @@ const SolutionPage = () => {
                     {
                         serviceList.map((serviceItem, index) => {
                             return (
-                                <div className={`${"col-lg-4 col-sm-6"}`} key={index}>
+                                <div className={`${"col"}`} key={index}>
                                     <div className={`${"px-5"} ${SolutionsStyle.contSolut}`}>
                                         <div className={SolutionsStyle.iconSolut}>
                                             <FontAwesomeIcon icon={serviceItem.icon} />
+                                            
                                         </div>
-                                        <div className={home.contentSub}>
+                                        <h6 className={SolutionsStyle.contentTitle}>{serviceItem.title}</h6>
+                                        <div className={SolutionsStyle.contentSub}>
                                             {
                                                 serviceItem.content.map((subcontent, subindex) => {
                                                     return (
@@ -89,14 +90,20 @@ const SolutionPage = () => {
                         {
                             stepList.map((stepItem, index) => {
                                 return (
-                                    <div className="col-md-4 d-flex" key={index}>
-                                        <div className={SolutionsStyle.imgStep}>
-                                            {index > 0 && <img src={outsourcingImagebt} alt='Outsourcingbt' />}
+                                    <>
+                                         <div className="col-md-1 d-flex" key={index}>
+                                            <div className={SolutionsStyle.iconStep}>
+                                                
+                                                {index > 0  ? <FontAwesomeIcon icon={faAnglesRight} /> : <FontAwesomeIcon icon={faGears} />  }
+                                            </div>
                                         </div>
-                                        <div className={SolutionsStyle.contStep}>
-                                            {stepItem.content.map((content, subindex) => <p key={subindex}>{content}</p>)}
+                                        <div className={`col-md-3 d-flex ${SolutionsStyle.contStep}`} key={index}>
+                                            <div>
+                                                {stepItem.content.map((content, subindex) => <p key={subindex}> {subindex > 0 ? content : <h6>{content}</h6>}</p>)}
+                                            </div>
                                         </div>
-                                    </div>
+                                        
+                                    </>
                                 )
                             })
                         }

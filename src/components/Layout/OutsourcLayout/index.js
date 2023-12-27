@@ -15,12 +15,12 @@ const outsourcLayout = () => {
                 <div className='container-fluid'>
                     <div className="col-lg-12">
                         <div className="row">
-                            <div className="col-lg-9">
+                            <div className="col-lg-10">
                                 <div className="container">
                                     <Outlet />
                                 </div>
                             </div>
-                            <div className={`${osLayout.sideBarstyle} ${"col-lg-3 bg-white"}`}>
+                            <div className={`${osLayout.sideBarstyle} ${"col-lg-2"}`}>
                                 <Sidebar />
                             </div>
                         </div>
