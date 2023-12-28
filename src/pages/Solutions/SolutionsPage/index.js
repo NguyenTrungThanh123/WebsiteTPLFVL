@@ -49,8 +49,8 @@ const SolutionPage = () => {
                         {
                             serviceList.map((serviceItem, index) => {
                                 return (
-                                    <div className={`${"col"}`} key={index}>
-                                        <div className={`${"px-5"} ${SolutionsStyle.contSolut}`}>
+                                    <div className={`${SolutionsStyle.colmd5ths} ${SolutionsStyle.colsm5ths}`} key={index}>
+                                        <div className={`${SolutionsStyle.contSolut}`}>
                                             <div className={SolutionsStyle.iconSolut}>
                                                 <FontAwesomeIcon icon={serviceItem.icon} />
 
@@ -92,7 +92,7 @@ const SolutionPage = () => {
                                         <>
                                             <div className="col-md-1 d-flex" key={index}>
                                                 <div className={SolutionsStyle.iconStep}>
-
+                                                   
                                                     {index > 0 ? <FontAwesomeIcon icon={faAnglesRight} /> : <FontAwesomeIcon icon={faGears} />}
                                                 </div>
                                             </div>

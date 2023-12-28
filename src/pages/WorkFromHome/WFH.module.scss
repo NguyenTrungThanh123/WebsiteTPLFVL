@@ -4,11 +4,10 @@
     margin: 10px;
     width: auto;
     border-radius: 40px;
-    border: 1.5px solid #acacac;
     padding: 40px;
     transition: transform .2s;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
-
+    background-color: #fff;
     .iconWfh {
         padding: 0;
     }
@@ -94,4 +93,12 @@
     z-index: -1;
     bottom: 0;
     right: 0;
+}
+.imgWfh{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    img{
+        border-radius: 10px;
+    }
 }

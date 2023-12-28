@@ -42,7 +42,7 @@ const Advantage = () => {
                                         <div className={home.titleContent}>
                                             <h3>{functionItem.title1}</h3>
                                         </div>
-                                        <div className={`${outsourcingStyle.contOurS} ${"d-flex align-items-center"}`}>
+                                        <div className={`${advantageStyle.contOurS} ${"d-flex align-items-center"}`}>
                                             <div className={home.numberItem}>
                                                 <h2>01</h2>
                                             </div>
@@ -50,7 +50,7 @@ const Advantage = () => {
                                                 {functionItem.paragraph1}
                                             </div>
                                         </div>
-                                        <div className={`${outsourcingStyle.contOurS} ${"d-flex align-items-center"}`}>
+                                        <div className={`${advantageStyle.contOurS} ${"d-flex align-items-center"}`}>
                                             <div className={home.numberItem}>
                                                 <h2>02</h2>
                                             </div>
@@ -59,7 +59,7 @@ const Advantage = () => {
                                                 {functionItem.paragraph2}
                                             </div>
                                         </div>
-                                        <div className={`${outsourcingStyle.contOurS} ${"d-flex align-items-center"}`}>
+                                        <div className={`${advantageStyle.contOurS} ${"d-flex align-items-center"}`}>
                                             <div className={home.numberItem}>
                                                 <h2>03</h2>
                                             </div>
@@ -67,7 +67,7 @@ const Advantage = () => {
                                                 {functionItem.paragraph3}
                                             </div>
                                         </div>
-                                        <div className={`${outsourcingStyle.contOurS} ${"d-flex align-items-center"}`}>
+                                        <div className={`${advantageStyle.contOurS} ${"d-flex align-items-center"}`}>
                                             <div className={home.numberItem}>
                                                 <h2>04</h2>
                                             </div>
@@ -88,7 +88,7 @@ const Advantage = () => {
                                         <div className={home.titleContent}>
                                             <h3>{functionItem.title2}</h3>
                                         </div>
-                                        <div className={`${outsourcingStyle.contOurS} ${"d-flex align-items-center"}`}>
+                                        <div className={`${advantageStyle.contOurS} ${"d-flex align-items-center"}`}>
                                             <div className={home.numberItem}>
                                                 <h2>01</h2>
                                             </div>
@@ -96,7 +96,7 @@ const Advantage = () => {
                                                 {functionItem.paragraph5}
                                             </div>
                                         </div>
-                                        <div className={`${outsourcingStyle.contOurS} ${"d-flex align-items-center"}`}>
+                                        <div className={`${advantageStyle.contOurS} ${"d-flex align-items-center"}`}>
                                             <div className={home.numberItem}>
                                                 <h2>02</h2>
                                             </div>
@@ -104,7 +104,7 @@ const Advantage = () => {
                                                 {functionItem.paragraph6}
                                             </div>
                                         </div>
-                                        <div className={`${outsourcingStyle.contOurS} ${"d-flex align-items-center"}`}>
+                                        <div className={`${advantageStyle.contOurS} ${"d-flex align-items-center"}`}>
                                             <div className={home.numberItem}>
                                                 <h2>03</h2>
                                             </div>
@@ -112,7 +112,7 @@ const Advantage = () => {
                                                 {functionItem.paragraph7}
                                             </div>
                                         </div>
-                                        <div className={`${outsourcingStyle.contOurS} ${"d-flex align-items-center"}`}>
+                                        <div className={`${advantageStyle.contOurS} ${"d-flex align-items-center"}`}>
                                             <div className={home.numberItem}>
                                                 <h2>04</h2>
                                             </div>

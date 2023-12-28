@@ -78,7 +78,7 @@ const OurCustomers = () => {
                                                                         <p>
                                                                             <FontAwesomeIcon icon={faQuoteLeft} />{item.content}<FontAwesomeIcon icon={faQuoteRight} />
                                                                         </p>
-                                                                        <h5 className={home.author}>{item.author}</h5>
+                                                                        <h6 className={home.author}>{item.author}</h6>
                                                                     </div>
                                                                 </div>
                                                             </div>

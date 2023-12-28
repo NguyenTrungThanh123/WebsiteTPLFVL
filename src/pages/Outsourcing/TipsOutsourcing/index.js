@@ -27,7 +27,7 @@ const Tips = () => {
                         return (
                             <>
                                 <div className="row" key={index}>
-                                    <div className={`${outsourcingStyle.contOurS}`}>
+                                    <div className={`${tipsStyle.contOurS}`}>
                                         <div className="d-flex align-items-center">
                                             <div className={home.numberItem}>
                                                 <h2>{contentItem.icon}</h2>

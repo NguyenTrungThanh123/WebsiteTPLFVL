@@ -27,10 +27,10 @@ const Careers = () => {
                         CareersList.map((career, index) => {
                             return (
                                 <>
-                                    <div className={careerScss.detailCareer}>
-                                        <div className="row" key={index}>
+                                    <div className="row" key={index}>
+                                        <div className={careerScss.detailCareer}>
                                             <div className="col-lg-3">
-                                                {career.image}
+                                                <div className={careerScss.image}>{career.image}</div>
                                             </div>
                                             <div className="col-lg-9">
                                                 <h5>{career.jobName}</h5>
@@ -63,6 +63,7 @@ const Careers = () => {
                                             </div>
                                         </div>
                                     </div>
+                                   
                                 </>
                             )
                         })

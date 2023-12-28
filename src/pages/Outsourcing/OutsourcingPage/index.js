@@ -2,29 +2,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import home from '../../Home/home.module.scss';
 
-import outsourcingImagebt from "../../../Image/Outsourcing/arrow.jpg"
 import outsourcingStyle from './outsourcing.module.scss'
+import {faAnglesRight, faGears,faQuoteRight,faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const OutsourcingPage = () => {
 
     const functionList = [
-        {
-            title: 'Outsource Non-Core Functions',
-            paragraph1: 'Reduce Management Burden of Day-to-Day Tasks',
-            paragraph2: 'Reduce Costs Related to Labor and Operations',
-            paragraph3: 'Reduce Process Inefficiencies'
-        },
-        {
-            title: 'Focus on Strategic Functions',
-            paragraph1: 'Increase Capacity for Strategic Tasks',
-            paragraph2: 'Focus Time and Resources on Customer Base',
-            paragraph3: 'Improve Productivity and Quality'
-        },
-        {
-            title: 'Achieve Business Objectives',
-            paragraph1: 'Increase Sales and Customer Satisfaction',
-            paragraph2: 'Increase Revenues and Profit Margins',
-            paragraph3: 'Achieve Stronger, More Flexible Market Position'
-        }
+        { content: ['Outsource Non-Core Functions', 'Reduce Management Burden of Day-to-Day Tasks', 'Reduce Costs Related to Labor and Operations', 'Reduce Process Inefficiencies'] },
+        { content: ['Focus on Strategic Functions', 'Increase Capacity for Strategic Tasks', 'Focus Time and Resources on Customer Base', 'Improve Productivity and Quality'] },
+        { content: ['Achieve Business Objectives', 'Increase Sales and Customer Satisfaction', 'Increase Revenues and Profit Margins', 'Achieve Stronger, More Flexible Market Position'] },
     ]
 
     return (
@@ -84,20 +70,39 @@ const OutsourcingPage = () => {
                         {
                             functionList.map((functionItem, index) => {
                                 return (
-                                    <div className="col-lg-4 d-flex" key={index}>
-                                        {index > 0 && <img src={outsourcingImagebt} alt='Outsourcingbt' />}
-                                        <div className={outsourcingStyle.contbottom}>
-                                            <h6 className={home.titleContent}>{functionItem.title}</h6>
-                                            <p>{functionItem.paragraph1}</p>
-                                            <p>{functionItem.paragraph2}</p>
-                                            <p>{functionItem.paragraph3}</p>
+                                    // <div className="col-lg-4 d-flex" key={index}>
+                                    //     {index > 0 && <img src={outsourcingImagebt} alt='Outsourcingbt' />}
+                                    //     <div className={outsourcingStyle.contbottom}>
+                                    //         <h6 className={home.titleContent}>{functionItem.title}</h6>
+                                    //         <p>{functionItem.paragraph1}</p>
+                                    //         <p>{functionItem.paragraph2}</p>
+                                    //         <p>{functionItem.paragraph3}</p>
+                                    //     </div>
+                                    // </div>
+                                    <>
+                                        <div className="col-md-1 d-flex" key={index}>
+                                            <div className={outsourcingStyle.iconStep}>
+
+                                                {index > 0 ? <FontAwesomeIcon icon={faAnglesRight} /> : <FontAwesomeIcon icon={faGears} />}
+                                            </div>
                                         </div>
-                                    </div>
+                                        <div className={`col-md-3 d-flex ${outsourcingStyle.contStep}`} key={index}>
+                                            <div>
+                                                {functionItem.content.map((content, subindex) => <p key={subindex}> {subindex > 0 ? content : <h6>{content}</h6>}</p>)}
+                                            </div>
+                                        </div>
+
+                                    </>
+
                                 )
                             })
                         }
                     </div>
                 </div>
+            </div>
+            <div className={outsourcingStyle.sayings}> 
+                <p><FontAwesomeIcon icon={faQuoteLeft} /> Do what you do best and outsource the rest <FontAwesomeIcon icon={faQuoteRight} /></p>
+                <h6>Peter Drucker</h6>
             </div>
         </>
     )

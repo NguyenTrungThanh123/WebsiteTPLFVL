@@ -5,10 +5,13 @@
     }
 }
 .contSol{
-    margin: 40px;
+    margin: 20px;
     border-radius: 40px;
     border: 1.5px solid #acacac;
     padding: 20px;
     transition: transform .2s;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+}
+.note{
+    text-align: center;
 }

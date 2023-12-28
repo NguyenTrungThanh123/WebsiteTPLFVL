@@ -9,6 +9,8 @@
     /* padding: 0; */
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
     height: 300px;
+    padding-left: 10px;
+    margin-top: 10px;
 }
 .contentTitle {
     padding-top: 10px;
@@ -17,9 +19,10 @@
 .iconSolut{
     text-align: center;
     font-size: 40px;
+    
 }
 .iconStep{
-   font-size: 70px;
+   font-size: 60px;
    align-items: center;
    display: flex;
    text-align: center;
@@ -30,7 +33,7 @@
    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
    padding: 20px;
    border-radius: 30px;
-
+   
 }
 .contentSub{
     display: flex;
@@ -44,4 +47,69 @@
 }
 .title{
     padding-top: 20px;
+}
+.colmd5ths{
+
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+.colxs5ths{
+
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+   
+}
+.collg5ths{
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.collg5ths{
+    width: 20%;
+
+    float: left;
+
+}
+
+@media (min-width: 768px) {
+
+    .colsm5ths {
+
+        width: 20%;
+        float: left;
+
+
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .colmd5ths {
+
+        width: 20%;
+
+        float: left;
+
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .collg5ths {
+
+        width: 20%;
+
+        float: left;
+
+    }
+
 }
