@@ -49,8 +49,24 @@ import image2 from '../../Image/News/2.jpg';
 import image3 from '../../Image/News/3.jpg';
 import image6 from '../../Image/News/6.jpg';
 import image7 from '../../Image/News/7.jpg';
+import HPBD_September2023 from '../../Image/News/HPBD_September2023.jpg';
+import ksk2023 from '../../Image/News/ksk2023.jpg';
 
 const contentEvents = [
+    {   
+        link: 'https://www.facebook.com/FVLTPL/posts/pfbid0CQS4PmZVmEcyj33a74pwB5ZBu1AYVfTDjg7zhDi6F5KQzREcgf88QxfLDiEzQ9JYl',
+        urlImage : ksk2023,
+        alt: 'Sức khỏe là món quà vô giá của chúng ta!!!',
+        title: 'Sức khỏe là món quà vô giá của chúng ta!!!',
+        content : 'Sức khỏe cần được chăm sóc và bảo vệ. Khám sức khỏe định kỳ là một việc rất cần thiết để bảo vệ sức khỏe của bạn và gia đình bạn.',
+    },
+    {   
+        link: 'https://www.facebook.com/FVLTPL/posts/pfbid0tYkQqtuNojhjryv7BHKFCcpbgEqHuyRAo6yyJhvBxLdXhTHP6ansqwLviDFbJkyrl',
+        urlImage : HPBD_September2023,
+        alt: 'HAPPY BIRTHDAY SEPTEMBER 2023 !!!',
+        title: 'HAPPY BIRTHDAY SEPTEMBER 2023 !!!',
+        content : 'I wish you full of happiness and love. May all your dreams turn come true and may lady luck visit you everyday.',
+    },
     {   
         link: 'https://www.facebook.com/FVLTPL/posts/pfbid02tnbstPL71i26W7BQm1mnerw3SSzuqDBcnTgvEtwxCT3zryrNEr5rPSTsjsVj5rS6l',
         urlImage : yeuthuonglachodi,
