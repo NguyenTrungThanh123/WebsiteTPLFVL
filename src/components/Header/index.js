@@ -43,21 +43,21 @@ const MainLayout = () => {
   ];
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-white sticky-top">
-        <div className="container-fluid" >
+      <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div className="container-fluid">
           <div className={header.logo}>
             <NavLink to='/'><img src={fvlLogo} alt="Logo FVL" className={header.logoFVL} /></NavLink>
             <NavLink to='/'><img src={tplLogo} alt="Logo FVL" className={header.logoTPL} /></NavLink>
           </div>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className={`${header.navlist} ${"collapse navbar-collapse"}`} id="navbarTogglerDemo03">
+          <div className={`${header.navlist} ${"collapse navbar-collapse"}`} id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               {navbarList.map((navbarItem, index) => {
                 return (
                   <li className="nav-item" key={index}>
-                    <NavLink to={navbarItem.to} className={({isActive}) => isActive ? `${header.active} ${"nav-link"}` : `${"nav-link"}`}> {/* Thêm lớp CSS noUnderline */}
+                    <NavLink to={navbarItem.to} className={({ isActive }) => isActive ? `${header.active} ${"nav-link"}` : `${"nav-link"}`} /*data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"*/ > {/* Thêm lớp CSS noUnderline */}
                       {navbarItem.name}
                     </NavLink>
                   </li>
